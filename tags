@@ -1,0 +1,215 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+0	DZ1/.vscode/launch.json	/^				{$/;"	o	array:configurations.0.setupCommands
+0	DZ1/.vscode/launch.json	/^		{$/;"	o	array:configurations
+0	DZ1/.vscode/tasks.json	/^                "-g",$/;"	s	array:tasks.0.args
+0	DZ1/.vscode/tasks.json	/^        {$/;"	o	array:tasks
+1	DZ1/.vscode/tasks.json	/^                "${file}",$/;"	s	array:tasks.0.args
+2	DZ1/.vscode/tasks.json	/^                "-o",$/;"	s	array:tasks.0.args
+3	DZ1/.vscode/tasks.json	/^                "${fileDirname}\/${fileBasenameNoExtension}"$/;"	s	array:tasks.0.args
+B	DZ1/ImageEditor/include/Layer.h	/^	int R, G, B;$/;"	m	struct:__anone4489dc20108	typeref:typename:int
+COMPLEX_H	Vezbe 3/3.2. Complex/Complex.h	/^#define COMPLEX_H$/;"	d
+COMPLEX_H	Vezbe 4/4.3. Complex - Parser stringa/Complex.h	/^#define COMPLEX_H$/;"	d
+C_Cpp.clang_format_fallbackStyle	DZ1/.vscode/settings.json	/^	"C_Cpp.clang_format_fallbackStyle": "LLVM",$/;"	s
+C_Cpp.clang_format_style	DZ1/.vscode/settings.json	/^	"C_Cpp.clang_format_style": "LLVM",$/;"	s
+C_Cpp.errorSquiggles	DZ1/.vscode/settings.json	/^	"C_Cpp.errorSquiggles": "Disabled"$/;"	s
+C_Cpp.intelliSenseEngineFallback	DZ1/.vscode/settings.json	/^	"C_Cpp.intelliSenseEngineFallback": "Disabled",$/;"	s
+Clock	Vezbe 2/2.1. Clock/Clock.cpp	/^Clock::Clock() {$/;"	f	class:Clock
+Clock	Vezbe 2/2.1. Clock/Clock.cpp	/^Clock::Clock(int h, int m, int s) {$/;"	f	class:Clock
+Clock	Vezbe 2/2.1. Clock/Clock.h	/^class Clock {$/;"	c
+Color	DZ1/ImageEditor/include/ImageEditor.h	/^		pixel Color;$/;"	m	class:ImageEditor	typeref:typename:pixel
+Complex	Vezbe 3/3.2. Complex/Complex.cpp	/^Complex::Complex(string var, int re, int im) {$/;"	f	class:Complex
+Complex	Vezbe 3/3.2. Complex/Complex.h	/^class Complex {$/;"	c
+Complex	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^Complex::Complex(string var, int re, int im) {$/;"	f	class:Complex
+Complex	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^Complex::Complex(string z) {$/;"	f	class:Complex
+Complex	Vezbe 4/4.3. Complex - Parser stringa/Complex.h	/^class Complex {$/;"	c
+Elem	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.h	/^	struct Elem {$/;"	s	class:Stack
+G	DZ1/ImageEditor/include/Layer.h	/^	int R, G, B;$/;"	m	struct:__anone4489dc20108	typeref:typename:int
+IMAGEEDITOR_H	DZ1/ImageEditor/include/ImageEditor.h	/^#define IMAGEEDITOR_H$/;"	d
+ImageEditor	DZ1/ImageEditor/include/ImageEditor.h	/^class ImageEditor {$/;"	c
+ImageEditor	DZ1/ImageEditor/src/ImageEditor.cpp	/^ImageEditor::ImageEditor() {$/;"	f	class:ImageEditor
+LAYERLIST_H	DZ1/ImageEditor/include/LayerList.h	/^#define LAYERLIST_H$/;"	d
+LAYER_H	DZ1/ImageEditor/include/Layer.h	/^#define LAYER_H$/;"	d
+Layer	DZ1/ImageEditor/include/Layer.h	/^class Layer {$/;"	c
+Layer	DZ1/ImageEditor/src/Layer.cpp	/^Layer::Layer(int width, int height) { \/\/ FEJLOVI?$/;"	f	class:Layer
+LayerList	DZ1/ImageEditor/include/LayerList.h	/^class LayerList {$/;"	c
+LayerList	DZ1/ImageEditor/src/LayerList.cpp	/^LayerList::LayerList(int width, int height, unsigned char *image, int it) {$/;"	f	class:LayerList
+LayerNode	DZ1/ImageEditor/include/LayerList.h	/^} LayerNode;$/;"	t	typeref:struct:node
+Layers	DZ1/ImageEditor/include/ImageEditor.h	/^		LayerList *Layers;$/;"	m	class:ImageEditor	typeref:typename:LayerList *
+MIMode	DZ1/.vscode/launch.json	/^			"MIMode": "gdb",$/;"	s	object:configurations.0
+MaxStackSize	Vezbe 3/3.1. Stack, ParenChecker/Stack.h	/^const int MaxStackSize = 256;$/;"	v	typeref:typename:const int
+PROF_TEST	DZ1/ImageEditor/Main.cpp	/^#define PROF_TEST$/;"	d	file:
+ParenChecker	Vezbe 3/3.1. Stack, ParenChecker/ParenChecker.cpp	/^ParenChecker::ParenChecker(Stack* stack) {$/;"	f	class:ParenChecker
+ParenChecker	Vezbe 3/3.1. Stack, ParenChecker/ParenChecker.h	/^class ParenChecker {$/;"	c
+ParenChecker	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/ParenChecker.cpp	/^ParenChecker::ParenChecker(Stack* stack) {$/;"	f	class:ParenChecker
+ParenChecker	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/ParenChecker.h	/^class ParenChecker {$/;"	c
+ParenChecker	Vezbe 4/4.2. Stack, ParenChecker - Lista/ParenChecker.cpp	/^ParenChecker::ParenChecker(Stack* stack) {$/;"	f	class:ParenChecker
+ParenChecker	Vezbe 4/4.2. Stack, ParenChecker - Lista/ParenChecker.h	/^class ParenChecker {$/;"	c
+R	DZ1/ImageEditor/include/Layer.h	/^	int R, G, B;$/;"	m	struct:__anone4489dc20108	typeref:typename:int
+STACK_H	Vezbe 3/3.1. Stack, ParenChecker/Stack.h	/^#define STACK_H$/;"	d
+STACK_H	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^#define STACK_H$/;"	d
+STACK_H	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.h	/^#define STACK_H$/;"	d
+Stack	Vezbe 3/3.1. Stack, ParenChecker/Stack.cpp	/^Stack::Stack() {$/;"	f	class:Stack
+Stack	Vezbe 3/3.1. Stack, ParenChecker/Stack.h	/^class Stack {$/;"	c
+Stack	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.cpp	/^Stack::Stack() {$/;"	f	class:Stack
+Stack	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^class Stack {$/;"	c
+Stack	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.cpp	/^Stack::Stack() {$/;"	f	class:Stack
+Stack	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.h	/^class Stack {$/;"	c
+StackSizeDecrement	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^const int StackSizeDecrement = 5;$/;"	v	typeref:typename:const int
+StackSizeIncrement	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^const int StackSizeIncrement = 5;$/;"	v	typeref:typename:const int
+StartingStackSize	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^const int StartingStackSize = 5;$/;"	v	typeref:typename:const int
+_CLOCK_H_	Vezbe 2/2.1. Clock/Clock.h	/^#define _CLOCK_H_$/;"	d
+__anone4489dc20108	DZ1/ImageEditor/include/Layer.h	/^typedef struct {$/;"	s
+abs	Vezbe 3/3.2. Complex/Complex.cpp	/^double Complex::abs() {$/;"	f	class:Complex	typeref:typename:double
+abs	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^double Complex::abs() {$/;"	f	class:Complex	typeref:typename:double
+activeLayer	DZ1/ImageEditor/include/ImageEditor.h	/^		int activeLayer;$/;"	m	class:ImageEditor	typeref:typename:int
+add	Vezbe 3/3.2. Complex/Complex.cpp	/^Complex* Complex::add(string var, Complex* z1, Complex* z2) {$/;"	f	class:Complex	typeref:typename:Complex *
+add	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^Complex* Complex::add(string var, Complex* z1, Complex* z2) {$/;"	f	class:Complex	typeref:typename:Complex *
+addLayer	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::addLayer() {$/;"	f	class:ImageEditor	typeref:typename:void
+addLayer	DZ1/ImageEditor/src/LayerList.cpp	/^void LayerList::addLayer(int width, int height) {$/;"	f	class:LayerList	typeref:typename:void
+arg	Vezbe 3/3.2. Complex/Complex.cpp	/^double Complex::arg() {$/;"	f	class:Complex	typeref:typename:double
+arg	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^double Complex::arg() {$/;"	f	class:Complex	typeref:typename:double
+args	DZ1/.vscode/launch.json	/^			"args": [],$/;"	a	object:configurations.0
+args	DZ1/.vscode/tasks.json	/^            "args": [$/;"	a	object:tasks.0
+base	DZ1/ImageEditor/include/LayerList.h	/^		LayerNode *base;$/;"	m	class:LayerList	typeref:typename:LayerNode *
+blur	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::blur(int size) {$/;"	f	class:ImageEditor	typeref:typename:void
+blur	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::blur(int size) {$/;"	f	class:Layer	typeref:typename:void
+checkBound	DZ1/ImageEditor/src/Layer.cpp	/^bool Layer::checkBound(int x, int y) {$/;"	f	class:Layer	typeref:typename:bool
+command	DZ1/.vscode/tasks.json	/^            "command": "\/usr\/bin\/g++",$/;"	s	object:tasks.0
+configurations	DZ1/.vscode/launch.json	/^	"configurations": [$/;"	a
+copy2img	DZ1/ImageEditor/src/Layer.cpp	/^bool Layer::copy2img(pixel*** dest) {$/;"	f	class:Layer	typeref:typename:bool
+crop	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::crop(int x, int y, int w, int h) {$/;"	f	class:ImageEditor	typeref:typename:void
+crop	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::crop(int x, int y, int w, int h) {$/;"	f	class:Layer	typeref:typename:void
+cwd	DZ1/.vscode/launch.json	/^			"cwd": "${workspaceFolder}",$/;"	s	object:configurations.0
+cwd	DZ1/.vscode/tasks.json	/^                "cwd": "\/usr\/bin"$/;"	s	object:tasks.0.options
+data	DZ1/ImageEditor/include/LayerList.h	/^	Layer* data;$/;"	m	struct:node	typeref:typename:Layer *
+deleteLayer	DZ1/ImageEditor/src/ImageEditor.cpp	/^bool ImageEditor::deleteLayer() {$/;"	f	class:ImageEditor	typeref:typename:bool
+deleteLayer	DZ1/ImageEditor/src/LayerList.cpp	/^bool LayerList::deleteLayer(int index) {$/;"	f	class:LayerList	typeref:typename:bool
+description	DZ1/.vscode/launch.json	/^					"description": "Enable pretty-printing for gdb",$/;"	s	object:configurations.0.setupCommands.0
+editImage	DZ1/ImageEditor/Main.cpp	/^unsigned char* editImage(unsigned char* input) {$/;"	f	typeref:typename:unsigned char *
+editImage	DZ1/Main/Main.cpp	/^unsigned char* editImage(unsigned char* input) {$/;"	f	typeref:typename:unsigned char *
+environment	DZ1/.vscode/launch.json	/^			"environment": [],$/;"	a	object:configurations.0
+eraseRect	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::eraseRect(int x, int y, int w, int h) {$/;"	f	class:ImageEditor	typeref:typename:void
+eraseRect	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::eraseRect(int x, int y, int w, int h) {$/;"	f	class:Layer	typeref:typename:void
+exportImage	DZ1/ImageEditor/src/ImageEditor.cpp	/^pixel** ImageEditor::exportImage() {$/;"	f	class:ImageEditor	typeref:typename:pixel **
+externalConsole	DZ1/.vscode/launch.json	/^			"externalConsole": false,$/;"	b	object:configurations.0
+fetchImag	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^int Complex::fetchImag(string z, int i) {$/;"	f	class:Complex	typeref:typename:int
+fetchName	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^int Complex::fetchName(string z) {$/;"	f	class:Complex	typeref:typename:int
+fetchReal	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^int Complex::fetchReal(string z, int i) {$/;"	f	class:Complex	typeref:typename:int
+fillRect	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::fillRect(int x, int y, int w, int h) {$/;"	f	class:ImageEditor	typeref:typename:void
+fillRect	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::fillRect(int x, int y, int w, int h, pixel C) {$/;"	f	class:Layer	typeref:typename:void
+first	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.h	/^	Elem* first;$/;"	m	class:Stack	typeref:typename:Elem *
+flipHorizontal	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::flipHorizontal() {$/;"	f	class:ImageEditor	typeref:typename:void
+flipHorizontal	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::flipHorizontal() {$/;"	f	class:Layer	typeref:typename:void
+flipVertical	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::flipVertical() {$/;"	f	class:ImageEditor	typeref:typename:void
+flipVertical	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::flipVertical() {$/;"	f	class:Layer	typeref:typename:void
+getCheck	Vezbe 3/3.1. Stack, ParenChecker/ParenChecker.cpp	/^bool ParenChecker::getCheck(string input) {$/;"	f	class:ParenChecker	typeref:typename:bool
+getCheck	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/ParenChecker.cpp	/^bool ParenChecker::getCheck(string input) {$/;"	f	class:ParenChecker	typeref:typename:bool
+getCheck	Vezbe 4/4.2. Stack, ParenChecker - Lista/ParenChecker.cpp	/^bool ParenChecker::getCheck(string input) {$/;"	f	class:ParenChecker	typeref:typename:bool
+getImag	Vezbe 3/3.2. Complex/Complex.cpp	/^int Complex::getImag() {$/;"	f	class:Complex	typeref:typename:int
+getImag	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^int Complex::getImag() {$/;"	f	class:Complex	typeref:typename:int
+getInfo	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::getInfo() {$/;"	f	class:ImageEditor	typeref:typename:void
+getInfo	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::getInfo() {$/;"	f	class:Layer	typeref:typename:void
+getLayer	DZ1/ImageEditor/src/LayerList.cpp	/^LayerNode* LayerList::getLayer(int number) {$/;"	f	class:LayerList	typeref:typename:LayerNode *
+getOpacity	DZ1/ImageEditor/src/Layer.cpp	/^int Layer::getOpacity() {$/;"	f	class:Layer	typeref:typename:int
+getPixel	DZ1/ImageEditor/src/Layer.cpp	/^pixel Layer::getPixel(int x, int y) {$/;"	f	class:Layer	typeref:typename:pixel
+getReal	Vezbe 3/3.2. Complex/Complex.cpp	/^int Complex::getReal() {$/;"	f	class:Complex	typeref:typename:int
+getReal	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^int Complex::getReal() {$/;"	f	class:Complex	typeref:typename:int
+getSize	DZ1/ImageEditor/src/LayerList.cpp	/^int LayerList::getSize() {$/;"	f	class:LayerList	typeref:typename:int
+h	Vezbe 2/2.1. Clock/Clock.h	/^	int h, m, s;								\/\/ h = hour, m = minute, s = second$/;"	m	class:Clock	typeref:typename:int
+height	DZ1/ImageEditor/include/ImageEditor.h	/^		int width, height;$/;"	m	class:ImageEditor	typeref:typename:int
+height	DZ1/ImageEditor/include/Layer.h	/^		int width, height;$/;"	m	class:Layer	typeref:typename:int
+hex2int	DZ1/ImageEditor/src/ImageEditor.cpp	/^int hex2int(char hex) {$/;"	f	typeref:typename:int
+ignoreFailures	DZ1/.vscode/launch.json	/^					"ignoreFailures": true$/;"	b	object:configurations.0.setupCommands.0
+im	Vezbe 3/3.2. Complex/Complex.h	/^	int re, im;$/;"	m	class:Complex	typeref:typename:int
+im	Vezbe 4/4.3. Complex - Parser stringa/Complex.h	/^	int re, im;$/;"	m	class:Complex	typeref:typename:int
+img	DZ1/ImageEditor/include/Layer.h	/^		pixel **img;$/;"	m	class:Layer	typeref:typename:pixel **
+info	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.h	/^		int info;$/;"	m	struct:Stack::Elem	typeref:typename:int
+invertColors	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::invertColors() {$/;"	f	class:ImageEditor	typeref:typename:void
+invertColors	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::invertColors() {$/;"	f	class:Layer	typeref:typename:void
+isEmpty	Vezbe 3/3.1. Stack, ParenChecker/Stack.cpp	/^bool Stack::isEmpty() {$/;"	f	class:Stack	typeref:typename:bool
+isEmpty	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.cpp	/^bool Stack::isEmpty() {$/;"	f	class:Stack	typeref:typename:bool
+isEmpty	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.cpp	/^bool Stack::isEmpty() {$/;"	f	class:Stack	typeref:typename:bool
+label	DZ1/.vscode/tasks.json	/^            "label": "g++ build active file",$/;"	s	object:tasks.0
+listSize	DZ1/ImageEditor/include/LayerList.h	/^		int listSize;$/;"	m	class:LayerList	typeref:typename:int
+loadImage	DZ1/ImageEditor/src/ImageEditor.cpp	/^bool ImageEditor::loadImage(unsigned char *image) {$/;"	f	class:ImageEditor	typeref:typename:bool
+loadImage	DZ1/ImageEditor/src/Layer.cpp	/^bool Layer::loadImage(unsigned char *image, int it) {$/;"	f	class:Layer	typeref:typename:bool
+m	Vezbe 2/2.1. Clock/Clock.h	/^	int h, m, s;								\/\/ h = hour, m = minute, s = second$/;"	m	class:Clock	typeref:typename:int
+main	DZ1/ImageEditor/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	DZ1/ImageEditor/tests/testing.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	DZ1/Main/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	Vezbe 2/2.1. Clock/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	Vezbe 3/3.1. Stack, ParenChecker/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	Vezbe 3/3.2. Complex/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	Vezbe 4/4.2. Stack, ParenChecker - Lista/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	Vezbe 4/4.3. Complex - Parser stringa/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
+miDebuggerPath	DZ1/.vscode/launch.json	/^			"miDebuggerPath": "\/usr\/bin\/gdb"$/;"	s	object:configurations.0
+name	DZ1/.vscode/launch.json	/^			"name": "g++ build and debug active file",$/;"	s	object:configurations.0
+name	DZ1/ImageEditor/include/ImageEditor.h	/^		string name;$/;"	m	class:ImageEditor	typeref:typename:string
+next	DZ1/ImageEditor/include/LayerList.h	/^	struct node* next;$/;"	m	struct:node	typeref:struct:node *
+next	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.h	/^		Elem* next;$/;"	m	struct:Stack::Elem	typeref:typename:Elem *
+node	DZ1/ImageEditor/include/LayerList.h	/^typedef struct node{$/;"	s
+numberOfTests	DZ1/ImageEditor/Main.cpp	/^const int numberOfTests = 12;$/;"	v	typeref:typename:const int
+numberOfTests	DZ1/Main/Main.cpp	/^const int numberOfTests = 12;$/;"	v	typeref:typename:const int
+opacity	DZ1/ImageEditor/include/Layer.h	/^		int opacity;$/;"	m	class:Layer	typeref:typename:int
+options	DZ1/.vscode/tasks.json	/^            "options": {$/;"	o	object:tasks.0
+pixel	DZ1/ImageEditor/include/Layer.h	/^} pixel;$/;"	t	typeref:struct:__anone4489dc20108
+pop	Vezbe 3/3.1. Stack, ParenChecker/Stack.cpp	/^bool Stack::pop(int* out) {$/;"	f	class:Stack	typeref:typename:bool
+pop	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.cpp	/^bool Stack::pop(int* out) {$/;"	f	class:Stack	typeref:typename:bool
+pop	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.cpp	/^bool Stack::pop(int* out) {$/;"	f	class:Stack	typeref:typename:bool
+preLaunchTask	DZ1/.vscode/launch.json	/^			"preLaunchTask": "g++ build active file",$/;"	s	object:configurations.0
+print	Vezbe 3/3.2. Complex/Complex.cpp	/^void Complex::print() {$/;"	f	class:Complex	typeref:typename:void
+print	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^void Complex::print() {$/;"	f	class:Complex	typeref:typename:void
+printTime	Vezbe 2/2.1. Clock/Clock.cpp	/^void Clock::printTime() {$/;"	f	class:Clock	typeref:typename:void
+program	DZ1/.vscode/launch.json	/^			"program": "${fileDirname}\/${fileBasenameNoExtension}",$/;"	s	object:configurations.0
+push	Vezbe 3/3.1. Stack, ParenChecker/Stack.cpp	/^bool Stack::push(int in) {$/;"	f	class:Stack	typeref:typename:bool
+push	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.cpp	/^bool Stack::push(int in) {$/;"	f	class:Stack	typeref:typename:bool
+push	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.cpp	/^bool Stack::push(int in) {$/;"	f	class:Stack	typeref:typename:bool
+re	Vezbe 3/3.2. Complex/Complex.h	/^	int re, im;$/;"	m	class:Complex	typeref:typename:int
+re	Vezbe 4/4.3. Complex - Parser stringa/Complex.h	/^	int re, im;$/;"	m	class:Complex	typeref:typename:int
+request	DZ1/.vscode/launch.json	/^			"request": "launch",$/;"	s	object:configurations.0
+s	Vezbe 2/2.1. Clock/Clock.h	/^	int h, m, s;								\/\/ h = hour, m = minute, s = second$/;"	m	class:Clock	typeref:typename:int
+saveImage	DZ1/ImageEditor/src/ImageEditor.cpp	/^unsigned char* ImageEditor::saveImage() {$/;"	f	class:ImageEditor	typeref:typename:unsigned char *
+selectLayer	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::selectLayer(int index) {$/;"	f	class:ImageEditor	typeref:typename:void
+setActiveColor	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::setActiveColor(string hex) {$/;"	f	class:ImageEditor	typeref:typename:void
+setLayerOpacity	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::setLayerOpacity(int opc) {$/;"	f	class:ImageEditor	typeref:typename:void
+setOpacity	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::setOpacity(int opc) {$/;"	f	class:Layer	typeref:typename:void
+setTime	Vezbe 2/2.1. Clock/Clock.cpp	/^void Clock::setTime(int h, int m, int s) {$/;"	f	class:Clock	typeref:typename:void
+setupCommands	DZ1/.vscode/launch.json	/^			"setupCommands": [$/;"	a	object:configurations.0
+size	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^	int size;$/;"	m	class:Stack	typeref:typename:int
+skipSpaces	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^int Complex::skipSpaces(string z, int k) {$/;"	f	class:Complex	typeref:typename:int
+sp	Vezbe 3/3.1. Stack, ParenChecker/Stack.h	/^	int sp;$/;"	m	class:Stack	typeref:typename:int
+sp	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^	int sp;$/;"	m	class:Stack	typeref:typename:int
+stack	Vezbe 3/3.1. Stack, ParenChecker/ParenChecker.h	/^	Stack* stack;$/;"	m	class:ParenChecker	typeref:typename:Stack *
+stack	Vezbe 3/3.1. Stack, ParenChecker/Stack.h	/^	int stack[MaxStackSize];$/;"	m	class:Stack	typeref:typename:int[]
+stack	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/ParenChecker.h	/^	Stack* stack;$/;"	m	class:ParenChecker	typeref:typename:Stack *
+stack	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^	int* stack;	\/\/ koristimo dinamicki niz$/;"	m	class:Stack	typeref:typename:int *
+stack	Vezbe 4/4.2. Stack, ParenChecker - Lista/ParenChecker.h	/^	Stack* stack;$/;"	m	class:ParenChecker	typeref:typename:Stack *
+stopAtEntry	DZ1/.vscode/launch.json	/^			"stopAtEntry": false,$/;"	b	object:configurations.0
+sub	Vezbe 3/3.2. Complex/Complex.cpp	/^Complex* Complex::sub(string var, Complex* z1, Complex* z2) {$/;"	f	class:Complex	typeref:typename:Complex *
+sub	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^Complex* Complex::sub(string var, Complex* z1, Complex* z2) {$/;"	f	class:Complex	typeref:typename:Complex *
+tasks	DZ1/.vscode/tasks.json	/^    "tasks": [$/;"	a
+testNumber	DZ1/ImageEditor/Main.cpp	/^int testNumber;$/;"	v	typeref:typename:int
+testNumber	DZ1/Main/Main.cpp	/^int testNumber;$/;"	v	typeref:typename:int
+text	DZ1/.vscode/launch.json	/^					"text": "-enable-pretty-printing",$/;"	s	object:configurations.0.setupCommands.0
+tick	Vezbe 2/2.1. Clock/Clock.cpp	/^void Clock::tick() {$/;"	f	class:Clock	typeref:typename:void
+toGrayScale	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::toGrayScale() {$/;"	f	class:ImageEditor	typeref:typename:void
+toGrayScale	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::toGrayScale() {$/;"	f	class:Layer	typeref:typename:void
+type	DZ1/.vscode/launch.json	/^			"type": "cppdbg",$/;"	s	object:configurations.0
+type	DZ1/.vscode/tasks.json	/^            "type": "shell",$/;"	s	object:tasks.0
+var	Vezbe 3/3.2. Complex/Complex.h	/^	string var;$/;"	m	class:Complex	typeref:typename:string
+var	Vezbe 4/4.3. Complex - Parser stringa/Complex.h	/^	string var;$/;"	m	class:Complex	typeref:typename:string
+version	DZ1/.vscode/tasks.json	/^    "version": "2.0.0"$/;"	s
+width	DZ1/ImageEditor/include/ImageEditor.h	/^		int width, height;$/;"	m	class:ImageEditor	typeref:typename:int
+width	DZ1/ImageEditor/include/Layer.h	/^		int width, height;$/;"	m	class:Layer	typeref:typename:int
+~ImageEditor	DZ1/ImageEditor/src/ImageEditor.cpp	/^ImageEditor::~ImageEditor() {$/;"	f	class:ImageEditor
+~Layer	DZ1/ImageEditor/src/Layer.cpp	/^Layer::~Layer() {$/;"	f	class:Layer
+~LayerList	DZ1/ImageEditor/src/LayerList.cpp	/^LayerList::~LayerList() {$/;"	f	class:LayerList
+~Stack	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.cpp	/^Stack::~Stack() {$/;"	f	class:Stack
+~Stack	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.cpp	/^Stack::~Stack() {$/;"	f	class:Stack
