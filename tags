@@ -8,6 +8,8 @@
 $(VERBOSE).SILENT	DZ1/ImageEditor/Relese/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 $(VERBOSE).SILENT	DZ1/ImageEditor/Relese/src/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 $(VERBOSE).SILENT	DZ1/ImageEditor/Relese/tests/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE).SILENT	DZ1/Main/Relese/Makefile	/^$(VERBOSE).SILENT:$/;"	t
+$(VERBOSE).SILENT	DZ1/build/Makefile	/^$(VERBOSE).SILENT:$/;"	t
 0	DZ1/.vscode/launch.json	/^				{$/;"	o	array:configurations.0.setupCommands
 0	DZ1/.vscode/launch.json	/^		{$/;"	o	array:configurations
 0	DZ1/.vscode/tasks.json	/^                "-g",$/;"	s	array:tasks.0.args
@@ -21,187 +23,461 @@ ARCHITECTURE_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompi
 ARCHITECTURE_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
 ARCHITECTURE_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
 ARCHITECTURE_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define ARCHITECTURE_ID$/;"	d	file:
+ARCHITECTURE_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID /;"	d	file:
+ARCHITECTURE_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define ARCHITECTURE_ID$/;"	d	file:
 B	DZ1/ImageEditor/include/Layer.h	/^	int R, G, B;$/;"	m	struct:__anone4489dc20108	typeref:typename:int
 CMAKE_AR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
 CMAKE_AR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
+CMAKE_AR	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_AR "\/usr\/bin\/ar")$/;"	v
 CMAKE_ARCHIVE_OUTPUT_DIRECTORY	DZ1/ImageEditor/CMakeLists.txt	/^set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}\/lib)$/;"	v
 CMAKE_BINARY_DIR	DZ1/ImageEditor/Relese/Makefile	/^CMAKE_BINARY_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor\/Relese$/;"	m
 CMAKE_BINARY_DIR	DZ1/ImageEditor/Relese/src/Makefile	/^CMAKE_BINARY_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor\/Relese$/;"	m
 CMAKE_BINARY_DIR	DZ1/ImageEditor/Relese/tests/Makefile	/^CMAKE_BINARY_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor\/Relese$/;"	m
+CMAKE_BINARY_DIR	DZ1/Main/Relese/Makefile	/^CMAKE_BINARY_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1\/Main\/Relese$/;"	m
+CMAKE_BINARY_DIR	DZ1/build/Makefile	/^CMAKE_BINARY_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1\/build$/;"	m
 CMAKE_C11_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
+CMAKE_C11_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
+CMAKE_C11_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")$/;"	v
 CMAKE_C90_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
+CMAKE_C90_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
+CMAKE_C90_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")$/;"	v
 CMAKE_C99_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
+CMAKE_C99_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
+CMAKE_C99_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")$/;"	v
 CMAKE_CL_SHOWINCLUDES_PREFIX	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
 CMAKE_CL_SHOWINCLUDES_PREFIX	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_C_CL_SHOWINCLUDES_PREFIX}")$/;"	v
+CMAKE_CL_SHOWINCLUDES_PREFIX	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_CL_SHOWINCLUDES_PREFIX "${CMAKE_CXX_CL_SHOWINCLUDES_PREFIX}")$/;"	v
 CMAKE_COMMAND	DZ1/ImageEditor/Relese/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	DZ1/ImageEditor/Relese/src/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMMAND	DZ1/ImageEditor/Relese/tests/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	DZ1/Main/Relese/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_COMMAND	DZ1/build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
 CMAKE_COMPILER_IS_CYGWIN	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
 CMAKE_COMPILER_IS_CYGWIN	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_CYGWIN	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_CYGWIN	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_CYGWIN	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
+CMAKE_COMPILER_IS_CYGWIN	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_CYGWIN )$/;"	v
 CMAKE_COMPILER_IS_GNUCC	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC 1)$/;"	v
+CMAKE_COMPILER_IS_GNUCC	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC 1)$/;"	v
+CMAKE_COMPILER_IS_GNUCC	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCC 1)$/;"	v
 CMAKE_COMPILER_IS_GNUCXX	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCXX 1)$/;"	v
+CMAKE_COMPILER_IS_GNUCXX	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCXX 1)$/;"	v
+CMAKE_COMPILER_IS_GNUCXX	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_GNUCXX 1)$/;"	v
 CMAKE_COMPILER_IS_MINGW	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
 CMAKE_COMPILER_IS_MINGW	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_COMPILER_IS_MINGW	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_COMPILER_IS_MINGW	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_COMPILER_IS_MINGW	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
+CMAKE_COMPILER_IS_MINGW	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_COMPILER_IS_MINGW )$/;"	v
 CMAKE_CROSSCOMPILING	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
 CMAKE_CROSSCOMPILING	DZ1/ImageEditor/Relese/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
 CMAKE_CROSSCOMPILING	DZ1/ImageEditor/Relese/src/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
 CMAKE_CROSSCOMPILING	DZ1/ImageEditor/Relese/tests/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	DZ1/Main/Relese/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
+CMAKE_CROSSCOMPILING	DZ1/build/cmake_install.cmake	/^  set(CMAKE_CROSSCOMPILING "FALSE")$/;"	v
 CMAKE_CXX11_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX11_COMPILE_FEATURES "cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_att/;"	v
+CMAKE_CXX11_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX11_COMPILE_FEATURES "cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_att/;"	v
+CMAKE_CXX11_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX11_COMPILE_FEATURES "cxx_std_11;cxx_alias_templates;cxx_alignas;cxx_alignof;cxx_att/;"	v
 CMAKE_CXX14_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX14_COMPILE_FEATURES "cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_de/;"	v
+CMAKE_CXX14_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX14_COMPILE_FEATURES "cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_de/;"	v
+CMAKE_CXX14_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX14_COMPILE_FEATURES "cxx_std_14;cxx_aggregate_default_initializers;cxx_attribute_de/;"	v
 CMAKE_CXX17_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")$/;"	v
+CMAKE_CXX17_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")$/;"	v
+CMAKE_CXX17_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX17_COMPILE_FEATURES "cxx_std_17")$/;"	v
 CMAKE_CXX20_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")$/;"	v
+CMAKE_CXX20_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")$/;"	v
+CMAKE_CXX20_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX20_COMPILE_FEATURES "cxx_std_20")$/;"	v
 CMAKE_CXX98_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX98_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters")$/;"	v
+CMAKE_CXX98_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX98_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters")$/;"	v
+CMAKE_CXX98_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX98_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters")$/;"	v
 CMAKE_CXX_ABI_COMPILED	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_ABI_COMPILED TRUE)$/;"	v
+CMAKE_CXX_ABI_COMPILED	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_ABI_COMPILED TRUE)$/;"	v
+CMAKE_CXX_ABI_COMPILED	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_ABI_COMPILED TRUE)$/;"	v
 CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_CXX_CL_SHOWINCLUDES_PREFIX	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX "")$/;"	v
 CMAKE_CXX_COMPILER	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER "\/usr\/bin\/c++")$/;"	v
+CMAKE_CXX_COMPILER	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER "\/usr\/bin\/c++")$/;"	v
+CMAKE_CXX_COMPILER	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER "\/usr\/bin\/c++")$/;"	v
 CMAKE_CXX_COMPILER_ABI	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ABI "ELF")$/;"	v
+CMAKE_CXX_COMPILER_ABI	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ABI "ELF")$/;"	v
+CMAKE_CXX_COMPILER_ABI	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ABI "ELF")$/;"	v
 CMAKE_CXX_COMPILER_AR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_CXX_COMPILER_AR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_CXX_COMPILER_AR	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
 CMAKE_CXX_COMPILER_ARG1	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ARG1 "")$/;"	v
+CMAKE_CXX_COMPILER_ARG1	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ARG1 "")$/;"	v
+CMAKE_CXX_COMPILER_ARG1	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ARG1 "")$/;"	v
 CMAKE_CXX_COMPILER_ENV_VAR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ENV_VAR "CXX")$/;"	v
+CMAKE_CXX_COMPILER_ENV_VAR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ENV_VAR "CXX")$/;"	v
+CMAKE_CXX_COMPILER_ENV_VAR	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ENV_VAR "CXX")$/;"	v
 CMAKE_CXX_COMPILER_FRONTEND_VARIANT	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_CXX_COMPILER_FRONTEND_VARIANT	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_CXX_COMPILER_FRONTEND_VARIANT	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")$/;"	v
 CMAKE_CXX_COMPILER_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
 CMAKE_CXX_COMPILER_ID	DZ1/ImageEditor/Relese/src/CMakeFiles/ImageEditor.dir/DependInfo.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
 CMAKE_CXX_COMPILER_ID	DZ1/ImageEditor/Relese/src/CMakeFiles/Layer.dir/DependInfo.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
 CMAKE_CXX_COMPILER_ID	DZ1/ImageEditor/Relese/src/CMakeFiles/LayerList.dir/DependInfo.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
 CMAKE_CXX_COMPILER_ID	DZ1/ImageEditor/Relese/tests/CMakeFiles/testing.dir/DependInfo.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID	DZ1/Main/Relese/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
+CMAKE_CXX_COMPILER_ID	DZ1/build/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_CXX_COMPILER_ID "GNU")$/;"	v
 CMAKE_CXX_COMPILER_ID_RUN	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_CXX_COMPILER_ID_RUN	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_CXX_COMPILER_ID_RUN	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_ID_RUN 1)$/;"	v
 CMAKE_CXX_COMPILER_LOADED	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_LOADED 1)$/;"	v
+CMAKE_CXX_COMPILER_LOADED	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_LOADED 1)$/;"	v
+CMAKE_CXX_COMPILER_LOADED	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_LOADED 1)$/;"	v
 CMAKE_CXX_COMPILER_RANLIB	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_CXX_COMPILER_RANLIB	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_CXX_COMPILER_RANLIB	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
 CMAKE_CXX_COMPILER_VERSION	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION "9.2.0")$/;"	v
+CMAKE_CXX_COMPILER_VERSION	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION "9.2.0")$/;"	v
+CMAKE_CXX_COMPILER_VERSION	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION "9.2.0")$/;"	v
 CMAKE_CXX_COMPILER_VERSION_INTERNAL	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_CXX_COMPILER_VERSION_INTERNAL	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_CXX_COMPILER_VERSION_INTERNAL	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")$/;"	v
 CMAKE_CXX_COMPILER_WORKS	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_CXX_COMPILER_WORKS	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_CXX_COMPILER_WORKS	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WORKS TRUE)$/;"	v
 CMAKE_CXX_COMPILER_WRAPPER	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WRAPPER "")$/;"	v
+CMAKE_CXX_COMPILER_WRAPPER	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WRAPPER "")$/;"	v
+CMAKE_CXX_COMPILER_WRAPPER	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILER_WRAPPER "")$/;"	v
 CMAKE_CXX_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters;cxx_std_11;cxx_alias/;"	v
+CMAKE_CXX_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters;cxx_std_11;cxx_alias/;"	v
+CMAKE_CXX_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_COMPILE_FEATURES "cxx_std_98;cxx_template_template_parameters;cxx_std_11;cxx_alias/;"	v
+CMAKE_CXX_FLAGS	DZ1/CMakeLists.txt	/^set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")$/;"	v
 CMAKE_CXX_FLAGS	DZ1/ImageEditor/CMakeLists.txt	/^set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")$/;"	v
+CMAKE_CXX_FLAGS	DZ1/Main/CMakeLists.txt	/^set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")$/;"	v
 CMAKE_CXX_IGNORE_EXTENSIONS	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IGNORE_EXTENSIONS inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_CXX_IGNORE_EXTENSIONS	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IGNORE_EXTENSIONS inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_CXX_IGNORE_EXTENSIONS	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IGNORE_EXTENSIONS inl;h;hpp;HPP;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
 CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/include\/c++\/9.2.0;\/usr\/include\/c++\/9.2./;"	v
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/include\/c++\/9.2.0;\/usr\/include\/c++\/9.2./;"	v
+CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/include\/c++\/9.2.0;\/usr\/include\/c++\/9.2./;"	v
 CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0;\/usr\/lib;/;"	v
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0;\/usr\/lib;/;"	v
+CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0;\/usr\/lib;/;"	v
 CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
 CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")$/;"	v
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")$/;"	v
+CMAKE_CXX_IMPLICIT_LINK_LIBRARIES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")$/;"	v
 CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	DZ1/ImageEditor/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
 CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	DZ1/ImageEditor/Relese/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
 CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	DZ1/ImageEditor/Relese/tests/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	DZ1/Main/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_COMPLAIN	DZ1/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})$/;"	v
 CMAKE_CXX_INCLUDE_REGEX_SCAN	DZ1/ImageEditor/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
 CMAKE_CXX_INCLUDE_REGEX_SCAN	DZ1/ImageEditor/Relese/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
 CMAKE_CXX_INCLUDE_REGEX_SCAN	DZ1/ImageEditor/Relese/tests/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	DZ1/Main/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
+CMAKE_CXX_INCLUDE_REGEX_SCAN	DZ1/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})$/;"	v
 CMAKE_CXX_LIBRARY_ARCHITECTURE	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_CXX_LIBRARY_ARCHITECTURE	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_CXX_LIBRARY_ARCHITECTURE	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")$/;"	v
 CMAKE_CXX_LINKER_PREFERENCE	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE 30)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE 30)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE 30)$/;"	v
 CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)$/;"	v
+CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)$/;"	v
 CMAKE_CXX_PLATFORM_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_PLATFORM_ID "Linux")$/;"	v
+CMAKE_CXX_PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_PLATFORM_ID "Linux")$/;"	v
+CMAKE_CXX_PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_PLATFORM_ID "Linux")$/;"	v
 CMAKE_CXX_SIMULATE_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_ID "")$/;"	v
+CMAKE_CXX_SIMULATE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_ID "")$/;"	v
+CMAKE_CXX_SIMULATE_ID	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_ID "")$/;"	v
 CMAKE_CXX_SIMULATE_VERSION	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_VERSION "")$/;"	v
+CMAKE_CXX_SIMULATE_VERSION	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_VERSION "")$/;"	v
+CMAKE_CXX_SIMULATE_VERSION	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIMULATE_VERSION "")$/;"	v
 CMAKE_CXX_SIZEOF_DATA_PTR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_CXX_SIZEOF_DATA_PTR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_CXX_SIZEOF_DATA_PTR	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SIZEOF_DATA_PTR "8")$/;"	v
 CMAKE_CXX_SOURCE_FILE_EXTENSIONS	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SOURCE_FILE_EXTENSIONS C;M;c++;cc;cpp;cxx;mm;CPP)$/;"	v
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SOURCE_FILE_EXTENSIONS C;M;c++;cc;cpp;cxx;mm;CPP)$/;"	v
+CMAKE_CXX_SOURCE_FILE_EXTENSIONS	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_SOURCE_FILE_EXTENSIONS C;M;c++;cc;cpp;cxx;mm;CPP)$/;"	v
+CMAKE_CXX_STANDARD	DZ1/CMakeLists.txt	/^set (CMAKE_CXX_STANDARD 11)$/;"	v
 CMAKE_CXX_STANDARD	DZ1/ImageEditor/CMakeLists.txt	/^set (CMAKE_CXX_STANDARD 11)$/;"	v
+CMAKE_CXX_STANDARD	DZ1/Main/CMakeLists.txt	/^set (CMAKE_CXX_STANDARD 11)$/;"	v
 CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")$/;"	v
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")$/;"	v
+CMAKE_CXX_STANDARD_COMPUTED_DEFAULT	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")$/;"	v
 CMAKE_CXX_TARGET_INCLUDE_PATH	DZ1/ImageEditor/Relese/src/CMakeFiles/ImageEditor.dir/DependInfo.cmake	/^set(CMAKE_CXX_TARGET_INCLUDE_PATH$/;"	v
 CMAKE_CXX_TARGET_INCLUDE_PATH	DZ1/ImageEditor/Relese/src/CMakeFiles/Layer.dir/DependInfo.cmake	/^set(CMAKE_CXX_TARGET_INCLUDE_PATH$/;"	v
 CMAKE_CXX_TARGET_INCLUDE_PATH	DZ1/ImageEditor/Relese/src/CMakeFiles/LayerList.dir/DependInfo.cmake	/^set(CMAKE_CXX_TARGET_INCLUDE_PATH$/;"	v
 CMAKE_CXX_TARGET_INCLUDE_PATH	DZ1/ImageEditor/Relese/tests/CMakeFiles/testing.dir/DependInfo.cmake	/^set(CMAKE_CXX_TARGET_INCLUDE_PATH$/;"	v
+CMAKE_CXX_TARGET_INCLUDE_PATH	DZ1/Main/Relese/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_CXX_TARGET_INCLUDE_PATH$/;"	v
+CMAKE_CXX_TARGET_INCLUDE_PATH	DZ1/build/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_CXX_TARGET_INCLUDE_PATH$/;"	v
 CMAKE_C_ABI_COMPILED	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
+CMAKE_C_ABI_COMPILED	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
+CMAKE_C_ABI_COMPILED	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_ABI_COMPILED TRUE)$/;"	v
 CMAKE_C_CL_SHOWINCLUDES_PREFIX	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
+CMAKE_C_CL_SHOWINCLUDES_PREFIX	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_CL_SHOWINCLUDES_PREFIX "")$/;"	v
 CMAKE_C_COMPILER	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/usr\/bin\/cc")$/;"	v
+CMAKE_C_COMPILER	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/usr\/bin\/cc")$/;"	v
+CMAKE_C_COMPILER	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER "\/usr\/bin\/cc")$/;"	v
 CMAKE_C_COMPILER_ABI	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "ELF")$/;"	v
+CMAKE_C_COMPILER_ABI	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "ELF")$/;"	v
+CMAKE_C_COMPILER_ABI	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ABI "ELF")$/;"	v
 CMAKE_C_COMPILER_AR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_C_COMPILER_AR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
+CMAKE_C_COMPILER_AR	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_AR "\/usr\/bin\/gcc-ar")$/;"	v
 CMAKE_C_COMPILER_ARG1	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
+CMAKE_C_COMPILER_ARG1	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
+CMAKE_C_COMPILER_ARG1	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ARG1 "")$/;"	v
 CMAKE_C_COMPILER_ENV_VAR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
+CMAKE_C_COMPILER_ENV_VAR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
+CMAKE_C_COMPILER_ENV_VAR	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ENV_VAR "CC")$/;"	v
 CMAKE_C_COMPILER_FRONTEND_VARIANT	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_FRONTEND_VARIANT "")$/;"	v
+CMAKE_C_COMPILER_FRONTEND_VARIANT	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_FRONTEND_VARIANT "")$/;"	v
 CMAKE_C_COMPILER_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "GNU")$/;"	v
+CMAKE_C_COMPILER_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "GNU")$/;"	v
+CMAKE_C_COMPILER_ID	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID "GNU")$/;"	v
 CMAKE_C_COMPILER_ID_RUN	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_C_COMPILER_ID_RUN	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
+CMAKE_C_COMPILER_ID_RUN	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_ID_RUN 1)$/;"	v
 CMAKE_C_COMPILER_LOADED	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
+CMAKE_C_COMPILER_LOADED	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
+CMAKE_C_COMPILER_LOADED	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_LOADED 1)$/;"	v
 CMAKE_C_COMPILER_RANLIB	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_C_COMPILER_RANLIB	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
+CMAKE_C_COMPILER_RANLIB	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_RANLIB "\/usr\/bin\/gcc-ranlib")$/;"	v
 CMAKE_C_COMPILER_VERSION	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "9.2.0")$/;"	v
+CMAKE_C_COMPILER_VERSION	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "9.2.0")$/;"	v
+CMAKE_C_COMPILER_VERSION	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION "9.2.0")$/;"	v
 CMAKE_C_COMPILER_VERSION_INTERNAL	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
+CMAKE_C_COMPILER_VERSION_INTERNAL	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_VERSION_INTERNAL "")$/;"	v
 CMAKE_C_COMPILER_WORKS	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_C_COMPILER_WORKS	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
+CMAKE_C_COMPILER_WORKS	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WORKS TRUE)$/;"	v
 CMAKE_C_COMPILER_WRAPPER	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
+CMAKE_C_COMPILER_WRAPPER	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
+CMAKE_C_COMPILER_WRAPPER	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILER_WRAPPER "")$/;"	v
 CMAKE_C_COMPILE_FEATURES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
+CMAKE_C_COMPILE_FEATURES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
+CMAKE_C_COMPILE_FEATURES	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macr/;"	v
 CMAKE_C_IGNORE_EXTENSIONS	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_C_IGNORE_EXTENSIONS	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
+CMAKE_C_IGNORE_EXTENSIONS	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)$/;"	v
 CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0\/include;\//;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0\/include;\//;"	v
+CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0\/include;\//;"	v
 CMAKE_C_IMPLICIT_LINK_DIRECTORIES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0;\/usr\/lib;\//;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0;\/usr\/lib;\//;"	v
+CMAKE_C_IMPLICIT_LINK_DIRECTORIES	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "\/usr\/lib\/gcc\/x86_64-pc-linux-gnu\/9.2.0;\/usr\/lib;\//;"	v
 CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
+CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")$/;"	v
 CMAKE_C_IMPLICIT_LINK_LIBRARIES	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")$/;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")$/;"	v
+CMAKE_C_IMPLICIT_LINK_LIBRARIES	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")$/;"	v
 CMAKE_C_INCLUDE_REGEX_COMPLAIN	DZ1/ImageEditor/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
 CMAKE_C_INCLUDE_REGEX_COMPLAIN	DZ1/ImageEditor/Relese/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
 CMAKE_C_INCLUDE_REGEX_COMPLAIN	DZ1/ImageEditor/Relese/tests/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	DZ1/Main/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_COMPLAIN	DZ1/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")$/;"	v
 CMAKE_C_INCLUDE_REGEX_SCAN	DZ1/ImageEditor/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
 CMAKE_C_INCLUDE_REGEX_SCAN	DZ1/ImageEditor/Relese/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
 CMAKE_C_INCLUDE_REGEX_SCAN	DZ1/ImageEditor/Relese/tests/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	DZ1/Main/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
+CMAKE_C_INCLUDE_REGEX_SCAN	DZ1/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")$/;"	v
 CMAKE_C_LIBRARY_ARCHITECTURE	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_C_LIBRARY_ARCHITECTURE	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_LIBRARY_ARCHITECTURE "")$/;"	v
 CMAKE_C_LINKER_PREFERENCE	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
+CMAKE_C_LINKER_PREFERENCE	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
+CMAKE_C_LINKER_PREFERENCE	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_LINKER_PREFERENCE 10)$/;"	v
 CMAKE_C_PLATFORM_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Linux")$/;"	v
+CMAKE_C_PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Linux")$/;"	v
+CMAKE_C_PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_PLATFORM_ID "Linux")$/;"	v
 CMAKE_C_SIMULATE_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
+CMAKE_C_SIMULATE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
+CMAKE_C_SIMULATE_ID	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_ID "")$/;"	v
 CMAKE_C_SIMULATE_VERSION	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
+CMAKE_C_SIMULATE_VERSION	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
+CMAKE_C_SIMULATE_VERSION	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIMULATE_VERSION "")$/;"	v
 CMAKE_C_SIZEOF_DATA_PTR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_C_SIZEOF_DATA_PTR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
+CMAKE_C_SIZEOF_DATA_PTR	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SIZEOF_DATA_PTR "8")$/;"	v
 CMAKE_C_SOURCE_FILE_EXTENSIONS	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
+CMAKE_C_SOURCE_FILE_EXTENSIONS	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_SOURCE_FILE_EXTENSIONS c;m)$/;"	v
 CMAKE_C_STANDARD_COMPUTED_DEFAULT	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")$/;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")$/;"	v
+CMAKE_C_STANDARD_COMPUTED_DEFAULT	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "11")$/;"	v
 CMAKE_DEPENDS_CHECK_CXX	DZ1/ImageEditor/Relese/src/CMakeFiles/ImageEditor.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_CXX$/;"	v
 CMAKE_DEPENDS_CHECK_CXX	DZ1/ImageEditor/Relese/src/CMakeFiles/Layer.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_CXX$/;"	v
 CMAKE_DEPENDS_CHECK_CXX	DZ1/ImageEditor/Relese/src/CMakeFiles/LayerList.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_CXX$/;"	v
 CMAKE_DEPENDS_CHECK_CXX	DZ1/ImageEditor/Relese/tests/CMakeFiles/testing.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_CXX$/;"	v
+CMAKE_DEPENDS_CHECK_CXX	DZ1/Main/Relese/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_CXX$/;"	v
+CMAKE_DEPENDS_CHECK_CXX	DZ1/build/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_CHECK_CXX$/;"	v
 CMAKE_DEPENDS_GENERATOR	DZ1/ImageEditor/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
+CMAKE_DEPENDS_GENERATOR	DZ1/Main/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
+CMAKE_DEPENDS_GENERATOR	DZ1/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")$/;"	v
 CMAKE_DEPENDS_LANGUAGES	DZ1/ImageEditor/Relese/src/CMakeFiles/ImageEditor.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
 CMAKE_DEPENDS_LANGUAGES	DZ1/ImageEditor/Relese/src/CMakeFiles/Layer.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
 CMAKE_DEPENDS_LANGUAGES	DZ1/ImageEditor/Relese/src/CMakeFiles/LayerList.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
 CMAKE_DEPENDS_LANGUAGES	DZ1/ImageEditor/Relese/tests/CMakeFiles/testing.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPENDS_LANGUAGES	DZ1/Main/Relese/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
+CMAKE_DEPENDS_LANGUAGES	DZ1/build/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_DEPENDS_LANGUAGES$/;"	v
 CMAKE_DEPEND_INFO_FILES	DZ1/ImageEditor/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
+CMAKE_DEPEND_INFO_FILES	DZ1/Main/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
+CMAKE_DEPEND_INFO_FILES	DZ1/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_DEPEND_INFO_FILES$/;"	v
 CMAKE_FORCE_UNIX_PATHS	DZ1/ImageEditor/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
 CMAKE_FORCE_UNIX_PATHS	DZ1/ImageEditor/Relese/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
 CMAKE_FORCE_UNIX_PATHS	DZ1/ImageEditor/Relese/tests/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_FORCE_UNIX_PATHS	DZ1/Main/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
+CMAKE_FORCE_UNIX_PATHS	DZ1/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_FORCE_UNIX_PATHS 1)$/;"	v
 CMAKE_Fortran_TARGET_MODULE_DIR	DZ1/ImageEditor/Relese/src/CMakeFiles/ImageEditor.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
 CMAKE_Fortran_TARGET_MODULE_DIR	DZ1/ImageEditor/Relese/src/CMakeFiles/Layer.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
 CMAKE_Fortran_TARGET_MODULE_DIR	DZ1/ImageEditor/Relese/src/CMakeFiles/LayerList.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
 CMAKE_Fortran_TARGET_MODULE_DIR	DZ1/ImageEditor/Relese/tests/CMakeFiles/testing.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	DZ1/Main/Relese/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
+CMAKE_Fortran_TARGET_MODULE_DIR	DZ1/build/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_Fortran_TARGET_MODULE_DIR "")$/;"	v
 CMAKE_HOST_SYSTEM	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-5.3.7-arch1-1-ARCH")$/;"	v
+CMAKE_HOST_SYSTEM	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-5.3.7-arch1-1-ARCH")$/;"	v
+CMAKE_HOST_SYSTEM	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM "Linux-5.3.7-arch1-1-ARCH")$/;"	v
 CMAKE_HOST_SYSTEM_NAME	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_HOST_SYSTEM_NAME	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_HOST_SYSTEM_NAME	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_NAME "Linux")$/;"	v
 CMAKE_HOST_SYSTEM_PROCESSOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_HOST_SYSTEM_PROCESSOR	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")$/;"	v
 CMAKE_HOST_SYSTEM_VERSION	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "5.3.7-arch1-1-ARCH")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "5.3.7-arch1-1-ARCH")$/;"	v
+CMAKE_HOST_SYSTEM_VERSION	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_HOST_SYSTEM_VERSION "5.3.7-arch1-1-ARCH")$/;"	v
 CMAKE_INSTALL_COMPONENT	DZ1/ImageEditor/Relese/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
 CMAKE_INSTALL_COMPONENT	DZ1/ImageEditor/Relese/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
 CMAKE_INSTALL_COMPONENT	DZ1/ImageEditor/Relese/src/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
 CMAKE_INSTALL_COMPONENT	DZ1/ImageEditor/Relese/src/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
 CMAKE_INSTALL_COMPONENT	DZ1/ImageEditor/Relese/tests/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
 CMAKE_INSTALL_COMPONENT	DZ1/ImageEditor/Relese/tests/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_COMPONENT	DZ1/Main/Relese/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	DZ1/Main/Relese/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
+CMAKE_INSTALL_COMPONENT	DZ1/build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT "${COMPONENT}")$/;"	v
+CMAKE_INSTALL_COMPONENT	DZ1/build/cmake_install.cmake	/^    set(CMAKE_INSTALL_COMPONENT)$/;"	v
 CMAKE_INSTALL_CONFIG_NAME	DZ1/ImageEditor/Relese/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
 CMAKE_INSTALL_CONFIG_NAME	DZ1/ImageEditor/Relese/src/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
 CMAKE_INSTALL_CONFIG_NAME	DZ1/ImageEditor/Relese/tests/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	DZ1/Main/Relese/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
+CMAKE_INSTALL_CONFIG_NAME	DZ1/build/cmake_install.cmake	/^    set(CMAKE_INSTALL_CONFIG_NAME "")$/;"	v
 CMAKE_INSTALL_MANIFEST	DZ1/ImageEditor/Relese/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
 CMAKE_INSTALL_MANIFEST	DZ1/ImageEditor/Relese/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	DZ1/Main/Relese/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	DZ1/Main/Relese/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	DZ1/build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")$/;"	v
+CMAKE_INSTALL_MANIFEST	DZ1/build/cmake_install.cmake	/^  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")$/;"	v
 CMAKE_INSTALL_PREFIX	DZ1/ImageEditor/Relese/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
 CMAKE_INSTALL_PREFIX	DZ1/ImageEditor/Relese/src/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
 CMAKE_INSTALL_PREFIX	DZ1/ImageEditor/Relese/tests/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_PREFIX	DZ1/Main/Relese/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
+CMAKE_INSTALL_PREFIX	DZ1/build/cmake_install.cmake	/^  set(CMAKE_INSTALL_PREFIX "\/usr\/local")$/;"	v
 CMAKE_INSTALL_SO_NO_EXE	DZ1/ImageEditor/Relese/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
 CMAKE_INSTALL_SO_NO_EXE	DZ1/ImageEditor/Relese/src/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
 CMAKE_INSTALL_SO_NO_EXE	DZ1/ImageEditor/Relese/tests/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	DZ1/Main/Relese/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
+CMAKE_INSTALL_SO_NO_EXE	DZ1/build/cmake_install.cmake	/^  set(CMAKE_INSTALL_SO_NO_EXE "0")$/;"	v
 CMAKE_INTERNAL_PLATFORM_ABI	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
 CMAKE_INTERNAL_PLATFORM_ABI	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_CXX_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_CXX_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_C_COMPILER_ABI}")$/;"	v
+CMAKE_INTERNAL_PLATFORM_ABI	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_INTERNAL_PLATFORM_ABI "${CMAKE_CXX_COMPILER_ABI}")$/;"	v
 CMAKE_LIBRARY_ARCHITECTURE	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
 CMAKE_LIBRARY_ARCHITECTURE	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
+CMAKE_LIBRARY_ARCHITECTURE	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_LIBRARY_ARCHITECTURE "")$/;"	v
 CMAKE_LIBRARY_OUTPUT_DIRECTORY	DZ1/ImageEditor/CMakeLists.txt	/^set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}\/lib)$/;"	v
 CMAKE_LINKER	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
 CMAKE_LINKER	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
+CMAKE_LINKER	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_LINKER "\/usr\/bin\/ld")$/;"	v
 CMAKE_MAKEFILE_DEPENDS	DZ1/ImageEditor/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
+CMAKE_MAKEFILE_DEPENDS	DZ1/Main/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
+CMAKE_MAKEFILE_DEPENDS	DZ1/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_DEPENDS$/;"	v
 CMAKE_MAKEFILE_OUTPUTS	DZ1/ImageEditor/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
+CMAKE_MAKEFILE_OUTPUTS	DZ1/Main/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
+CMAKE_MAKEFILE_OUTPUTS	DZ1/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_OUTPUTS$/;"	v
 CMAKE_MAKEFILE_PRODUCTS	DZ1/ImageEditor/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
+CMAKE_MAKEFILE_PRODUCTS	DZ1/Main/Relese/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
+CMAKE_MAKEFILE_PRODUCTS	DZ1/build/CMakeFiles/Makefile.cmake	/^set(CMAKE_MAKEFILE_PRODUCTS$/;"	v
 CMAKE_MT	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
 CMAKE_MT	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
+CMAKE_MT	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_MT "")$/;"	v
 CMAKE_RANLIB	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
 CMAKE_RANLIB	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
+CMAKE_RANLIB	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^set(CMAKE_RANLIB "\/usr\/bin\/ranlib")$/;"	v
 CMAKE_RELATIVE_PATH_TOP_BINARY	DZ1/ImageEditor/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor\/Relese")$/;"	v
 CMAKE_RELATIVE_PATH_TOP_BINARY	DZ1/ImageEditor/Relese/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor\/Relese")$/;"	v
 CMAKE_RELATIVE_PATH_TOP_BINARY	DZ1/ImageEditor/Relese/tests/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor\/Relese")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	DZ1/Main/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/mladen\/fax\/s3\/OOP\/DZ1\/Main\/Relese")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_BINARY	DZ1/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_BINARY "\/home\/mladen\/fax\/s3\/OOP\/DZ1\/build")$/;"	v
 CMAKE_RELATIVE_PATH_TOP_SOURCE	DZ1/ImageEditor/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor")$/;"	v
 CMAKE_RELATIVE_PATH_TOP_SOURCE	DZ1/ImageEditor/Relese/src/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor")$/;"	v
 CMAKE_RELATIVE_PATH_TOP_SOURCE	DZ1/ImageEditor/Relese/tests/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	DZ1/Main/Relese/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/mladen\/fax\/s3\/OOP\/DZ1\/Main")$/;"	v
+CMAKE_RELATIVE_PATH_TOP_SOURCE	DZ1/build/CMakeFiles/CMakeDirectoryInformation.cmake	/^set(CMAKE_RELATIVE_PATH_TOP_SOURCE "\/home\/mladen\/fax\/s3\/OOP\/DZ1")$/;"	v
 CMAKE_SIZEOF_VOID_P	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
 CMAKE_SIZEOF_VOID_P	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_C_SIZEOF_DATA_PTR}")$/;"	v
+CMAKE_SIZEOF_VOID_P	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")$/;"	v
 CMAKE_SOURCE_DIR	DZ1/ImageEditor/Relese/Makefile	/^CMAKE_SOURCE_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor$/;"	m
 CMAKE_SOURCE_DIR	DZ1/ImageEditor/Relese/src/Makefile	/^CMAKE_SOURCE_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor$/;"	m
 CMAKE_SOURCE_DIR	DZ1/ImageEditor/Relese/tests/Makefile	/^CMAKE_SOURCE_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1\/ImageEditor$/;"	m
+CMAKE_SOURCE_DIR	DZ1/Main/Relese/Makefile	/^CMAKE_SOURCE_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1\/Main$/;"	m
+CMAKE_SOURCE_DIR	DZ1/build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/mladen\/fax\/s3\/OOP\/DZ1$/;"	m
 CMAKE_SYSTEM	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-5.3.7-arch1-1-ARCH")$/;"	v
+CMAKE_SYSTEM	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-5.3.7-arch1-1-ARCH")$/;"	v
+CMAKE_SYSTEM	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM "Linux-5.3.7-arch1-1-ARCH")$/;"	v
 CMAKE_SYSTEM_LOADED	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
+CMAKE_SYSTEM_LOADED	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
+CMAKE_SYSTEM_LOADED	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_LOADED 1)$/;"	v
 CMAKE_SYSTEM_NAME	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_SYSTEM_NAME	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
+CMAKE_SYSTEM_NAME	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_NAME "Linux")$/;"	v
 CMAKE_SYSTEM_PROCESSOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_SYSTEM_PROCESSOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
+CMAKE_SYSTEM_PROCESSOR	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_PROCESSOR "x86_64")$/;"	v
 CMAKE_SYSTEM_VERSION	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "5.3.7-arch1-1-ARCH")$/;"	v
+CMAKE_SYSTEM_VERSION	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "5.3.7-arch1-1-ARCH")$/;"	v
+CMAKE_SYSTEM_VERSION	DZ1/build/CMakeFiles/3.15.4/CMakeSystem.cmake	/^set(CMAKE_SYSTEM_VERSION "5.3.7-arch1-1-ARCH")$/;"	v
 CMAKE_TARGET_DEFINITIONS_CXX	DZ1/ImageEditor/Relese/src/CMakeFiles/ImageEditor.dir/DependInfo.cmake	/^set(CMAKE_TARGET_DEFINITIONS_CXX$/;"	v
 CMAKE_TARGET_DEFINITIONS_CXX	DZ1/ImageEditor/Relese/src/CMakeFiles/Layer.dir/DependInfo.cmake	/^set(CMAKE_TARGET_DEFINITIONS_CXX$/;"	v
 CMAKE_TARGET_DEFINITIONS_CXX	DZ1/ImageEditor/Relese/src/CMakeFiles/LayerList.dir/DependInfo.cmake	/^set(CMAKE_TARGET_DEFINITIONS_CXX$/;"	v
@@ -209,24 +485,62 @@ CMAKE_TARGET_LINKED_INFO_FILES	DZ1/ImageEditor/Relese/src/CMakeFiles/ImageEditor
 CMAKE_TARGET_LINKED_INFO_FILES	DZ1/ImageEditor/Relese/src/CMakeFiles/Layer.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
 CMAKE_TARGET_LINKED_INFO_FILES	DZ1/ImageEditor/Relese/src/CMakeFiles/LayerList.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
 CMAKE_TARGET_LINKED_INFO_FILES	DZ1/ImageEditor/Relese/tests/CMakeFiles/testing.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	DZ1/Main/Relese/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
+CMAKE_TARGET_LINKED_INFO_FILES	DZ1/build/CMakeFiles/Domaci1.dir/DependInfo.cmake	/^set(CMAKE_TARGET_LINKED_INFO_FILES$/;"	v
 COMPILER_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
 COMPILER_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_ID /;"	d	file:
+COMPILER_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_ID /;"	d	file:
 COMPILER_VERSION_INTERNAL	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
 COMPILER_VERSION_INTERNAL	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
 COMPILER_VERSION_INTERNAL	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
 COMPILER_VERSION_INTERNAL	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_INTERNAL /;"	d	file:
+COMPILER_VERSION_INTERNAL	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_INTERNAL /;"	d	file:
 COMPILER_VERSION_MAJOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
 COMPILER_VERSION_MAJOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
 COMPILER_VERSION_MAJOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
 COMPILER_VERSION_MAJOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
 COMPILER_VERSION_MAJOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
 COMPILER_VERSION_MAJOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MAJOR /;"	d	file:
+COMPILER_VERSION_MAJOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MAJOR /;"	d	file:
 COMPILER_VERSION_MINOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
 COMPILER_VERSION_MINOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
 COMPILER_VERSION_MINOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
 COMPILER_VERSION_MINOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
 COMPILER_VERSION_MINOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
 COMPILER_VERSION_MINOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_MINOR /;"	d	file:
+COMPILER_VERSION_MINOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_MINOR /;"	d	file:
 COMPILER_VERSION_PATCH	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
 COMPILER_VERSION_PATCH	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
 COMPILER_VERSION_PATCH	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
@@ -235,15 +549,45 @@ COMPILER_VERSION_PATCH	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CM
 COMPILER_VERSION_PATCH	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
 COMPILER_VERSION_PATCH	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
 COMPILER_VERSION_PATCH	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^  # define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#   define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_PATCH /;"	d	file:
+COMPILER_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_PATCH /;"	d	file:
 COMPILER_VERSION_TWEAK	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
 COMPILER_VERSION_TWEAK	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
 COMPILER_VERSION_TWEAK	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
 COMPILER_VERSION_TWEAK	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define COMPILER_VERSION_TWEAK /;"	d	file:
+COMPILER_VERSION_TWEAK	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define COMPILER_VERSION_TWEAK /;"	d	file:
 COMPLEX_H	Vezbe 3/3.2. Complex/Complex.h	/^#define COMPLEX_H$/;"	d
 COMPLEX_H	Vezbe 4/4.3. Complex - Parser stringa/Complex.h	/^#define COMPLEX_H$/;"	d
 CXX_STD	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD /;"	d	file:
+CXX_STD	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD /;"	d	file:
+CXX_STD	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define CXX_STD /;"	d	file:
 CYGWIN	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
 CYGWIN	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+CYGWIN	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+CYGWIN	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+CYGWIN	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
+CYGWIN	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(CYGWIN 1)$/;"	v
 C_Cpp.clang_format_fallbackStyle	DZ1/.vscode/settings.json	/^	"C_Cpp.clang_format_fallbackStyle": "LLVM",$/;"	s
 C_Cpp.clang_format_style	DZ1/.vscode/settings.json	/^	"C_Cpp.clang_format_style": "LLVM",$/;"	s
 C_Cpp.errorSquiggles	DZ1/.vscode/settings.json	/^	"C_Cpp.errorSquiggles": "Disabled"$/;"	s
@@ -251,6 +595,12 @@ C_Cpp.intelliSenseEngineFallback	DZ1/.vscode/settings.json	/^	"C_Cpp.intelliSens
 C_DIALECT	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT /;"	d	file:
 C_DIALECT	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT$/;"	d	file:
 C_DIALECT	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define C_DIALECT /;"	d	file:
+C_DIALECT	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT /;"	d	file:
+C_DIALECT	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT$/;"	d	file:
+C_DIALECT	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define C_DIALECT /;"	d	file:
+C_DIALECT	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT /;"	d	file:
+C_DIALECT	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define C_DIALECT$/;"	d	file:
+C_DIALECT	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define C_DIALECT /;"	d	file:
 Clock	Vezbe 2/2.1. Clock/Clock.cpp	/^Clock::Clock() {$/;"	f	class:Clock
 Clock	Vezbe 2/2.1. Clock/Clock.cpp	/^Clock::Clock(int h, int m, int s) {$/;"	f	class:Clock
 Clock	Vezbe 2/2.1. Clock/Clock.h	/^class Clock {$/;"	c
@@ -262,14 +612,34 @@ Complex	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^Complex::Complex(str
 Complex	Vezbe 4/4.3. Complex - Parser stringa/Complex.h	/^class Complex {$/;"	c
 DEC	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
 DEC	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+DEC	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+DEC	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define DEC(/;"	d	file:
+DEC	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define DEC(/;"	d	file:
+Domaci1	DZ1/CMakeLists.txt	/^add_executable(Domaci1 Main\/Main.cpp)$/;"	t
+Domaci1	DZ1/CMakeLists.txt	/^project(Domaci1 VERSION 0.1.0)$/;"	p
+Domaci1	DZ1/Main/CMakeLists.txt	/^add_executable(Domaci1 Main.cpp)$/;"	t
+Domaci1	DZ1/Main/CMakeLists.txt	/^project(Domaci1 VERSION 0.1.0)$/;"	p
+Domaci1	DZ1/Main/Relese/Makefile	/^Domaci1: cmake_check_build_system$/;"	t
+Domaci1	DZ1/build/Makefile	/^Domaci1: cmake_check_build_system$/;"	t
+Domaci1/fast	DZ1/Main/Relese/Makefile	/^Domaci1\/fast:$/;"	t
+Domaci1/fast	DZ1/build/Makefile	/^Domaci1\/fast:$/;"	t
 EQUALS	DZ1/ImageEditor/Relese/Makefile	/^EQUALS = =$/;"	m
 EQUALS	DZ1/ImageEditor/Relese/src/Makefile	/^EQUALS = =$/;"	m
 EQUALS	DZ1/ImageEditor/Relese/tests/Makefile	/^EQUALS = =$/;"	m
+EQUALS	DZ1/Main/Relese/Makefile	/^EQUALS = =$/;"	m
+EQUALS	DZ1/build/Makefile	/^EQUALS = =$/;"	m
 Elem	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.h	/^	struct Elem {$/;"	s	class:Stack
 G	DZ1/ImageEditor/include/Layer.h	/^	int R, G, B;$/;"	m	struct:__anone4489dc20108	typeref:typename:int
 HEX	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
 HEX	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+HEX	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
+HEX	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define HEX(/;"	d	file:
+HEX	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define HEX(/;"	d	file:
 ID_VOID_MAIN	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+ID_VOID_MAIN	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
+ID_VOID_MAIN	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define ID_VOID_MAIN$/;"	d	file:
 IMAGEEDITOR_H	DZ1/ImageEditor/include/ImageEditor.h	/^#define IMAGEEDITOR_H$/;"	d
 ImageEditor	DZ1/ImageEditor/CMakeLists.txt	/^project(ImageEditor)$/;"	p
 ImageEditor	DZ1/ImageEditor/Relese/Makefile	/^ImageEditor: cmake_check_build_system$/;"	t
@@ -318,6 +688,22 @@ Layers	DZ1/ImageEditor/include/ImageEditor.h	/^		LayerList *Layers;$/;"	m	class:
 MIMode	DZ1/.vscode/launch.json	/^			"MIMode": "gdb",$/;"	s	object:configurations.0
 MINGW	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(MINGW 1)$/;"	v
 MINGW	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(MINGW 1)$/;"	v
+MINGW	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(MINGW 1)$/;"	v
+MINGW	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(MINGW 1)$/;"	v
+MINGW	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(MINGW 1)$/;"	v
+MINGW	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(MINGW 1)$/;"	v
+Main.cpp.i	DZ1/Main/Relese/Makefile	/^Main.cpp.i:$/;"	t
+Main.cpp.o	DZ1/Main/Relese/Makefile	/^Main.cpp.o:$/;"	t
+Main.cpp.s	DZ1/Main/Relese/Makefile	/^Main.cpp.s:$/;"	t
+Main.i	DZ1/Main/Relese/Makefile	/^Main.i: Main.cpp.i$/;"	t
+Main.o	DZ1/Main/Relese/Makefile	/^Main.o: Main.cpp.o$/;"	t
+Main.s	DZ1/Main/Relese/Makefile	/^Main.s: Main.cpp.s$/;"	t
+Main/Main.cpp.i	DZ1/build/Makefile	/^Main\/Main.cpp.i:$/;"	t
+Main/Main.cpp.o	DZ1/build/Makefile	/^Main\/Main.cpp.o:$/;"	t
+Main/Main.cpp.s	DZ1/build/Makefile	/^Main\/Main.cpp.s:$/;"	t
+Main/Main.i	DZ1/build/Makefile	/^Main\/Main.i: Main\/Main.cpp.i$/;"	t
+Main/Main.o	DZ1/build/Makefile	/^Main\/Main.o: Main\/Main.cpp.o$/;"	t
+Main/Main.s	DZ1/build/Makefile	/^Main\/Main.s: Main\/Main.cpp.s$/;"	t
 MaxStackSize	Vezbe 3/3.1. Stack, ParenChecker/Stack.h	/^const int MaxStackSize = 256;$/;"	v	typeref:typename:const int
 PLATFORM_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
 PLATFORM_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
@@ -327,6 +713,22 @@ PLATFORM_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompi
 PLATFORM_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
 PLATFORM_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
 PLATFORM_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define PLATFORM_ID$/;"	d	file:
+PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID /;"	d	file:
+PLATFORM_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^# define PLATFORM_ID$/;"	d	file:
 ParenChecker	Vezbe 3/3.1. Stack, ParenChecker/ParenChecker.cpp	/^ParenChecker::ParenChecker(Stack* stack) {$/;"	f	class:ParenChecker
 ParenChecker	Vezbe 3/3.1. Stack, ParenChecker/ParenChecker.h	/^class ParenChecker {$/;"	c
 ParenChecker	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/ParenChecker.cpp	/^ParenChecker::ParenChecker(Stack* stack) {$/;"	f	class:ParenChecker
@@ -337,27 +739,57 @@ R	DZ1/ImageEditor/include/Layer.h	/^	int R, G, B;$/;"	m	struct:__anone4489dc2010
 RM	DZ1/ImageEditor/Relese/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	DZ1/ImageEditor/Relese/src/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 RM	DZ1/ImageEditor/Relese/tests/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	DZ1/Main/Relese/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
+RM	DZ1/build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 SHELL	DZ1/ImageEditor/Relese/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	DZ1/ImageEditor/Relese/src/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SHELL	DZ1/ImageEditor/Relese/tests/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	DZ1/Main/Relese/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SHELL	DZ1/build/Makefile	/^SHELL = \/bin\/sh$/;"	m
 SIMULATE_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
 SIMULATE_ID	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_ID /;"	d	file:
+SIMULATE_ID	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_ID /;"	d	file:
 SIMULATE_VERSION_MAJOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
 SIMULATE_VERSION_MAJOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
+SIMULATE_VERSION_MAJOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MAJOR /;"	d	file:
 SIMULATE_VERSION_MINOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
 SIMULATE_VERSION_MINOR	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
+SIMULATE_VERSION_MINOR	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_MINOR /;"	d	file:
 SIMULATE_VERSION_PATCH	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
 SIMULATE_VERSION_PATCH	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
+SIMULATE_VERSION_PATCH	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#  define SIMULATE_VERSION_PATCH /;"	d	file:
 STACK_H	Vezbe 3/3.1. Stack, ParenChecker/Stack.h	/^#define STACK_H$/;"	d
 STACK_H	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^#define STACK_H$/;"	d
 STACK_H	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.h	/^#define STACK_H$/;"	d
 STRINGIFY	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
 STRINGIFY	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY(/;"	d	file:
+STRINGIFY	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY(/;"	d	file:
 STRINGIFY_HELPER	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
 STRINGIFY_HELPER	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^#define STRINGIFY_HELPER(/;"	d	file:
+STRINGIFY_HELPER	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^#define STRINGIFY_HELPER(/;"	d	file:
 SUFFIXES	DZ1/ImageEditor/Relese/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	DZ1/ImageEditor/Relese/src/Makefile	/^SUFFIXES =$/;"	m
 SUFFIXES	DZ1/ImageEditor/Relese/tests/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	DZ1/Main/Relese/Makefile	/^SUFFIXES =$/;"	m
+SUFFIXES	DZ1/build/Makefile	/^SUFFIXES =$/;"	m
 Stack	Vezbe 3/3.1. Stack, ParenChecker/Stack.cpp	/^Stack::Stack() {$/;"	f	class:Stack
 Stack	Vezbe 3/3.1. Stack, ParenChecker/Stack.h	/^class Stack {$/;"	c
 Stack	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.cpp	/^Stack::Stack() {$/;"	f	class:Stack
@@ -369,6 +801,10 @@ StackSizeIncrement	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^co
 StartingStackSize	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.h	/^const int StartingStackSize = 5;$/;"	v	typeref:typename:const int
 UNIX	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(UNIX 1)$/;"	v
 UNIX	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(UNIX 1)$/;"	v
+UNIX	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(UNIX 1)$/;"	v
+UNIX	DZ1/Main/Relese/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(UNIX 1)$/;"	v
+UNIX	DZ1/build/CMakeFiles/3.15.4/CMakeCCompiler.cmake	/^  set(UNIX 1)$/;"	v
+UNIX	DZ1/build/CMakeFiles/3.15.4/CMakeCXXCompiler.cmake	/^  set(UNIX 1)$/;"	v
 _CLOCK_H_	Vezbe 2/2.1. Clock/Clock.h	/^#define _CLOCK_H_$/;"	d
 __anone4489dc20108	DZ1/ImageEditor/include/Layer.h	/^typedef struct {$/;"	s
 abs	Vezbe 3/3.2. Complex/Complex.cpp	/^double Complex::abs() {$/;"	f	class:Complex	typeref:typename:double
@@ -381,6 +817,8 @@ addLayer	DZ1/ImageEditor/src/LayerList.cpp	/^void LayerList::addLayer(int width,
 all	DZ1/ImageEditor/Relese/Makefile	/^all: cmake_check_build_system$/;"	t
 all	DZ1/ImageEditor/Relese/src/Makefile	/^all: cmake_check_build_system$/;"	t
 all	DZ1/ImageEditor/Relese/tests/Makefile	/^all: cmake_check_build_system$/;"	t
+all	DZ1/Main/Relese/Makefile	/^all: cmake_check_build_system$/;"	t
+all	DZ1/build/Makefile	/^all: cmake_check_build_system$/;"	t
 arg	Vezbe 3/3.2. Complex/Complex.cpp	/^double Complex::arg() {$/;"	f	class:Complex	typeref:typename:double
 arg	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^double Complex::arg() {$/;"	f	class:Complex	typeref:typename:double
 args	DZ1/.vscode/launch.json	/^			"args": [],$/;"	a	object:configurations.0
@@ -392,18 +830,28 @@ checkBound	DZ1/ImageEditor/src/Layer.cpp	/^bool Layer::checkBound(int x, int y) 
 clean	DZ1/ImageEditor/Relese/Makefile	/^clean:$/;"	t
 clean	DZ1/ImageEditor/Relese/src/Makefile	/^clean:$/;"	t
 clean	DZ1/ImageEditor/Relese/tests/Makefile	/^clean:$/;"	t
+clean	DZ1/Main/Relese/Makefile	/^clean:$/;"	t
+clean	DZ1/build/Makefile	/^clean:$/;"	t
 clean/fast	DZ1/ImageEditor/Relese/Makefile	/^clean\/fast: clean$/;"	t
 clean/fast	DZ1/ImageEditor/Relese/src/Makefile	/^clean\/fast: clean$/;"	t
 clean/fast	DZ1/ImageEditor/Relese/tests/Makefile	/^clean\/fast: clean$/;"	t
+clean/fast	DZ1/Main/Relese/Makefile	/^clean\/fast: clean$/;"	t
+clean/fast	DZ1/build/Makefile	/^clean\/fast: clean$/;"	t
 cmake_check_build_system	DZ1/ImageEditor/Relese/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	DZ1/ImageEditor/Relese/src/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_check_build_system	DZ1/ImageEditor/Relese/tests/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_check_build_system	DZ1/Main/Relese/Makefile	/^cmake_check_build_system:$/;"	t
+cmake_check_build_system	DZ1/build/Makefile	/^cmake_check_build_system:$/;"	t
 cmake_force	DZ1/ImageEditor/Relese/Makefile	/^cmake_force:$/;"	t
 cmake_force	DZ1/ImageEditor/Relese/src/Makefile	/^cmake_force:$/;"	t
 cmake_force	DZ1/ImageEditor/Relese/tests/Makefile	/^cmake_force:$/;"	t
+cmake_force	DZ1/Main/Relese/Makefile	/^cmake_force:$/;"	t
+cmake_force	DZ1/build/Makefile	/^cmake_force:$/;"	t
 command	DZ1/.vscode/tasks.json	/^            "command": "\/usr\/bin\/g++",$/;"	s	object:tasks.0
 configurations	DZ1/.vscode/launch.json	/^	"configurations": [$/;"	a
 const	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+const	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
+const	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define const$/;"	d	file:
 copy2img	DZ1/ImageEditor/src/Layer.cpp	/^bool Layer::copy2img(pixel*** dest) {$/;"	f	class:Layer	typeref:typename:bool
 crop	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::crop(int x, int y, int w, int h) {$/;"	f	class:ImageEditor	typeref:typename:void
 crop	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::crop(int x, int y, int w, int h) {$/;"	f	class:Layer	typeref:typename:void
@@ -413,19 +861,27 @@ data	DZ1/ImageEditor/include/LayerList.h	/^	Layer* data;$/;"	m	struct:node	typer
 default_target	DZ1/ImageEditor/Relese/Makefile	/^default_target: all$/;"	t
 default_target	DZ1/ImageEditor/Relese/src/Makefile	/^default_target: all$/;"	t
 default_target	DZ1/ImageEditor/Relese/tests/Makefile	/^default_target: all$/;"	t
+default_target	DZ1/Main/Relese/Makefile	/^default_target: all$/;"	t
+default_target	DZ1/build/Makefile	/^default_target: all$/;"	t
 deleteLayer	DZ1/ImageEditor/src/ImageEditor.cpp	/^bool ImageEditor::deleteLayer() {$/;"	f	class:ImageEditor	typeref:typename:bool
 deleteLayer	DZ1/ImageEditor/src/LayerList.cpp	/^bool LayerList::deleteLayer(int index) {$/;"	f	class:LayerList	typeref:typename:bool
 depend	DZ1/ImageEditor/Relese/Makefile	/^depend:$/;"	t
 depend	DZ1/ImageEditor/Relese/src/Makefile	/^depend:$/;"	t
 depend	DZ1/ImageEditor/Relese/tests/Makefile	/^depend:$/;"	t
+depend	DZ1/Main/Relese/Makefile	/^depend:$/;"	t
+depend	DZ1/build/Makefile	/^depend:$/;"	t
 description	DZ1/.vscode/launch.json	/^					"description": "Enable pretty-printing for gdb",$/;"	s	object:configurations.0.setupCommands.0
 editImage	DZ1/Main/Main.cpp	/^unsigned char* editImage(unsigned char* input) {$/;"	f	typeref:typename:unsigned char *
 edit_cache	DZ1/ImageEditor/Relese/Makefile	/^edit_cache:$/;"	t
 edit_cache	DZ1/ImageEditor/Relese/src/Makefile	/^edit_cache:$/;"	t
 edit_cache	DZ1/ImageEditor/Relese/tests/Makefile	/^edit_cache:$/;"	t
+edit_cache	DZ1/Main/Relese/Makefile	/^edit_cache:$/;"	t
+edit_cache	DZ1/build/Makefile	/^edit_cache:$/;"	t
 edit_cache/fast	DZ1/ImageEditor/Relese/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	DZ1/ImageEditor/Relese/src/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 edit_cache/fast	DZ1/ImageEditor/Relese/tests/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+edit_cache/fast	DZ1/Main/Relese/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
+edit_cache/fast	DZ1/build/Makefile	/^edit_cache\/fast: edit_cache$/;"	t
 environment	DZ1/.vscode/launch.json	/^			"environment": [],$/;"	a	object:configurations.0
 eraseRect	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::eraseRect(int x, int y, int w, int h) {$/;"	f	class:ImageEditor	typeref:typename:void
 eraseRect	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::eraseRect(int x, int y, int w, int h) {$/;"	f	class:Layer	typeref:typename:void
@@ -460,6 +916,8 @@ height	DZ1/ImageEditor/include/Layer.h	/^		int width, height;$/;"	m	class:Layer	
 help	DZ1/ImageEditor/Relese/Makefile	/^help:$/;"	t
 help	DZ1/ImageEditor/Relese/src/Makefile	/^help:$/;"	t
 help	DZ1/ImageEditor/Relese/tests/Makefile	/^help:$/;"	t
+help	DZ1/Main/Relese/Makefile	/^help:$/;"	t
+help	DZ1/build/Makefile	/^help:$/;"	t
 hex2int	DZ1/ImageEditor/src/ImageEditor.cpp	/^int hex2int(char hex) {$/;"	f	typeref:typename:int
 ignoreFailures	DZ1/.vscode/launch.json	/^					"ignoreFailures": true$/;"	b	object:configurations.0.setupCommands.0
 im	Vezbe 3/3.2. Complex/Complex.h	/^	int re, im;$/;"	m	class:Complex	typeref:typename:int
@@ -468,22 +926,58 @@ img	DZ1/ImageEditor/include/Layer.h	/^		pixel **img;$/;"	m	class:Layer	typeref:t
 info	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.h	/^		int info;$/;"	m	struct:Stack::Elem	typeref:typename:int
 info_arch	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
 info_arch	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
+info_arch	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v	typeref:typename:char const *
 info_compiler	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
 info_compiler	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
+info_compiler	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v	typeref:typename:char const *
 info_cray	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
 info_cray	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
+info_cray	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v	typeref:typename:char const *
 info_language_dialect_default	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v	typeref:typename:const char *
 info_language_dialect_default	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v	typeref:typename:const char *
+info_language_dialect_default	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v	typeref:typename:const char *
+info_language_dialect_default	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v	typeref:typename:const char *
+info_language_dialect_default	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v	typeref:typename:const char *
+info_language_dialect_default	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v	typeref:typename:const char *
 info_platform	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
 info_platform	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
+info_platform	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v	typeref:typename:char const *
 info_simulate	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
 info_simulate	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
+info_simulate	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v	typeref:typename:char const *
 info_simulate_version	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
 info_simulate_version	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
+info_simulate_version	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v	typeref:typename:char const[]
 info_version	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
 info_version	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
+info_version	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v	typeref:typename:char const[]
 info_version_internal	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
 info_version_internal	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
+info_version_internal	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v	typeref:typename:char const[]
 invertColors	DZ1/ImageEditor/src/ImageEditor.cpp	/^void ImageEditor::invertColors() {$/;"	f	class:ImageEditor	typeref:typename:void
 invertColors	DZ1/ImageEditor/src/Layer.cpp	/^void Layer::invertColors() {$/;"	f	class:Layer	typeref:typename:void
 isEmpty	Vezbe 3/3.1. Stack, ParenChecker/Stack.cpp	/^bool Stack::isEmpty() {$/;"	f	class:Stack	typeref:typename:bool
@@ -499,6 +993,12 @@ main	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^v
 main	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
 main	DZ1/ImageEditor/tests/testing.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	DZ1/Main/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
+main	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f	typeref:typename:void
+main	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f	typeref:typename:int
 main	Vezbe 2/2.1. Clock/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	Vezbe 3/3.1. Stack, ParenChecker/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
 main	Vezbe 3/3.2. Complex/Main.cpp	/^int main() {$/;"	f	typeref:typename:int
@@ -522,9 +1022,13 @@ preLaunchTask	DZ1/.vscode/launch.json	/^			"preLaunchTask": "g++ build active fi
 preinstall	DZ1/ImageEditor/Relese/Makefile	/^preinstall: all$/;"	t
 preinstall	DZ1/ImageEditor/Relese/src/Makefile	/^preinstall: all$/;"	t
 preinstall	DZ1/ImageEditor/Relese/tests/Makefile	/^preinstall: all$/;"	t
+preinstall	DZ1/Main/Relese/Makefile	/^preinstall: all$/;"	t
+preinstall	DZ1/build/Makefile	/^preinstall: all$/;"	t
 preinstall/fast	DZ1/ImageEditor/Relese/Makefile	/^preinstall\/fast:$/;"	t
 preinstall/fast	DZ1/ImageEditor/Relese/src/Makefile	/^preinstall\/fast:$/;"	t
 preinstall/fast	DZ1/ImageEditor/Relese/tests/Makefile	/^preinstall\/fast:$/;"	t
+preinstall/fast	DZ1/Main/Relese/Makefile	/^preinstall\/fast:$/;"	t
+preinstall/fast	DZ1/build/Makefile	/^preinstall\/fast:$/;"	t
 print	Vezbe 3/3.2. Complex/Complex.cpp	/^void Complex::print() {$/;"	f	class:Complex	typeref:typename:void
 print	Vezbe 4/4.3. Complex - Parser stringa/Complex.cpp	/^void Complex::print() {$/;"	f	class:Complex	typeref:typename:void
 printTime	Vezbe 2/2.1. Clock/Clock.cpp	/^void Clock::printTime() {$/;"	f	class:Clock	typeref:typename:void
@@ -534,14 +1038,22 @@ push	Vezbe 4/4.1. Stack, ParenChecker - Dinamicki niz/Stack.cpp	/^bool Stack::pu
 push	Vezbe 4/4.2. Stack, ParenChecker - Lista/Stack.cpp	/^bool Stack::push(int in) {$/;"	f	class:Stack	typeref:typename:bool
 qnxnto	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
 qnxnto	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
+qnxnto	DZ1/build/CMakeFiles/3.15.4/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v	typeref:typename:char const *
 re	Vezbe 3/3.2. Complex/Complex.h	/^	int re, im;$/;"	m	class:Complex	typeref:typename:int
 re	Vezbe 4/4.3. Complex - Parser stringa/Complex.h	/^	int re, im;$/;"	m	class:Complex	typeref:typename:int
 rebuild_cache	DZ1/ImageEditor/Relese/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	DZ1/ImageEditor/Relese/src/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache	DZ1/ImageEditor/Relese/tests/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache	DZ1/Main/Relese/Makefile	/^rebuild_cache:$/;"	t
+rebuild_cache	DZ1/build/Makefile	/^rebuild_cache:$/;"	t
 rebuild_cache/fast	DZ1/ImageEditor/Relese/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 rebuild_cache/fast	DZ1/ImageEditor/Relese/src/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 rebuild_cache/fast	DZ1/ImageEditor/Relese/tests/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rebuild_cache/fast	DZ1/Main/Relese/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
+rebuild_cache/fast	DZ1/build/Makefile	/^rebuild_cache\/fast: rebuild_cache$/;"	t
 request	DZ1/.vscode/launch.json	/^			"request": "launch",$/;"	s	object:configurations.0
 s	Vezbe 2/2.1. Clock/Clock.h	/^	int h, m, s;								\/\/ h = hour, m = minute, s = second$/;"	m	class:Clock	typeref:typename:int
 saveImage	DZ1/ImageEditor/src/ImageEditor.cpp	/^unsigned char* ImageEditor::saveImage() {$/;"	f	class:ImageEditor	typeref:typename:unsigned char *
@@ -590,6 +1102,8 @@ var	Vezbe 3/3.2. Complex/Complex.h	/^	string var;$/;"	m	class:Complex	typeref:ty
 var	Vezbe 4/4.3. Complex - Parser stringa/Complex.h	/^	string var;$/;"	m	class:Complex	typeref:typename:string
 version	DZ1/.vscode/tasks.json	/^    "version": "2.0.0"$/;"	s
 volatile	DZ1/ImageEditor/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+volatile	DZ1/Main/Relese/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
+volatile	DZ1/build/CMakeFiles/3.15.4/CompilerIdC/CMakeCCompilerId.c	/^# define volatile$/;"	d	file:
 width	DZ1/ImageEditor/include/ImageEditor.h	/^		int width, height;$/;"	m	class:ImageEditor	typeref:typename:int
 width	DZ1/ImageEditor/include/Layer.h	/^		int width, height;$/;"	m	class:Layer	typeref:typename:int
 ~ImageEditor	DZ1/ImageEditor/src/ImageEditor.cpp	/^ImageEditor::~ImageEditor() {$/;"	f	class:ImageEditor

@@ -44,6 +44,7 @@ bool ImageEditor::loadImage(unsigned char *image) {
 		}
 	}
 
+
 	// width and height bytes must start on k % 4 == 0 
 	while (it % 4) ++it;
 
@@ -71,11 +72,10 @@ unsigned char* ImageEditor::saveImage() {
 	// Calculation of array size
 	int size = 2; 									// BM
 	if (name != "") size += 2 + name.length();		// =name=
-	if (!(size % 4)) size += 4 - (size % 4);		// fill to divisible by 4 
+	while (!(size % 4)) ++size;						// fill to divisible by 4 
 	size += 8;										// width and height (4 bytes)
-	int row_size = 0;
-	if (!(row_size % 4))							// fill to divisible by 4
-		row_size += 4 - (row_size % 4);
+	int row_size = 3 * 4 * width;					// calculate byte size of each row
+	while (!(row_size % 4)) ++row_size;				// fill to divisible by 4
 	size += height * row_size;						// size of whole pixel matrix
 
 	// Array allocation
@@ -118,7 +118,6 @@ unsigned char* ImageEditor::saveImage() {
 	img = exportImage();
 
 	// Turn pixel matrix into BM format for rows and columns
-	// PRIVREMENO
 	for (int j = height - 1; j >= 0; --j) {
 		for (int i = 0; i < width; ++i) {
 			encoding[it++] = (unsigned char) img[i][j].B;
@@ -129,7 +128,7 @@ unsigned char* ImageEditor::saveImage() {
 	}
 
 	// Free temp pixel matrix
-	for (int i = 0; i < width; i++) 
+	for (int i = 0; i < width; i++)
 		free(img[i]);
 	free(img);
 
@@ -152,7 +151,7 @@ pixel** ImageEditor::exportImage() {
 	for (int i = 0; i < width; ++i)
 		for (int j = 0; j < height; ++j) {
 			remainingOpacity = 100;
-			for (int it = 0; it < Layers->getSize(); ++it) {
+			for (int it = Layers->getSize() - 1; it >= 0; --it) {
 
 				px = Layers->getLayer(it)->data->getPixel(i, j);
 				pixelOpacity = Layers->getLayer(it)->data->getOpacity();

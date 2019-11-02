@@ -10,7 +10,7 @@ Layer::Layer(int width, int height) { // FEJLOVI?
 	// width, height and opacity init
 	this->width = width;
 	this->height = height;
-	opacity = 0;
+	opacity = 100;
 	
 	// Dynamic matrix of pixels
 	img = (pixel**) calloc(width, sizeof(pixel*));
