@@ -1,4 +1,4 @@
-#include "ImageEditor.h"
+#include "include/ImageEditor.h"
 #include <fstream>
 #include <iostream>
 #include <string>

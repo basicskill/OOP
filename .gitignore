@@ -6,4 +6,6 @@ Slike*/
 *.obj
 *.lib
 *.o
+*.zip
 .vscode/
+Relese/

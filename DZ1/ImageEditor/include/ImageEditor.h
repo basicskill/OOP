@@ -1,8 +1,8 @@
 #ifndef IMAGEEDITOR_H
 #define IMAGEEDITOR_H
 
-#include "Layer.h"
-#include "LayerList.h"
+#include "include/Layer.h"
+#include "include/LayerList.h"
 #include <string>
 
 using namespace std;

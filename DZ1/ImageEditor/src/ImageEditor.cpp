@@ -1,6 +1,6 @@
-#include "ImageEditor.h"
-#include "LayerList.h"
-#include "Layer.h"
+#include "include/ImageEditor.h"
+#include "include/LayerList.h"
+#include "include/Layer.h"
 #include <iostream>
 #include <string>
 #include <math.h>
