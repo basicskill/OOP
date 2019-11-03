@@ -147,6 +147,7 @@ pixel** ImageEditor::exportImage() {
 
 	pixel px;
 	int pixelOpacity, remainingOpacity;
+	double scaledOpacity;
 	// Combine Layers
 	for (int i = 0; i < width; ++i)
 		for (int j = 0; j < height; ++j) {
@@ -158,15 +159,17 @@ pixel** ImageEditor::exportImage() {
 
 				if (px.R == -1) continue;
 
-				px.R *= (remainingOpacity / 100) * (pixelOpacity / 100);
-				px.G *= (remainingOpacity / 100) * (pixelOpacity / 100);
-				px.B *= (remainingOpacity / 100) * (pixelOpacity / 100);
+				scaledOpacity = (remainingOpacity / 100.0) * (pixelOpacity / 100.0);
+
+				px.R *= scaledOpacity;
+				px.G *= scaledOpacity;
+				px.B *= scaledOpacity;
 
 				img[i][j].R += px.R;
 				img[i][j].G += px.G;
 				img[i][j].B += px.B;
 
-				remainingOpacity -= pixelOpacity;
+				remainingOpacity -= scaledOpacity * 100;
 
 			}
 		}
