@@ -19,18 +19,20 @@ LayerList::LayerList(int width, int height, unsigned char *image, int it) {
 
 
 // Add new transparent Layer to end of list
-void LayerList::addLayer(int width, int height) {
+void LayerList::addLayer(int width, int height, int index) {
+	// Select element of list on place 'index' - 1
+	LayerNode *it = base;
+	// while (it->next) it = it->next;
+	for (int i = 0; i < index - 1; ++i)
+		it = it->next;
+
 	// Allocate space for new LayerNode
 	LayerNode *newLayer;
 	newLayer = new LayerNode;
 
-	// Create new Layer obejct
+	// Create new Layer obejct after 
 	newLayer->data = new Layer(width, height);
-	newLayer->next = nullptr;
-
-	// Select last element of list
-	LayerNode *it = base;
-	while (it->next) it = it->next;
+	newLayer->next = it->next;
 	
 	// Add new Layer to end of list
 	it->next = newLayer;

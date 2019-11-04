@@ -18,7 +18,7 @@ class LayerList {
 		int getSize();
 		LayerNode* getLayer(int number);
 
-		void addLayer(int width, int height);
+		void addLayer(int width, int height, int index);
 		bool deleteLayer(int index);
 
 	private:

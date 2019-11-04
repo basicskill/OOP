@@ -177,11 +177,11 @@ pixel** ImageEditor::exportImage() {
 }
 
 
-// Add empty Layer to end of Layer list
+// Add empty Layer after current active Layer
 // set last Layer to be active Layer
 void ImageEditor::addLayer() {
-	Layers->addLayer(width, height);
-	activeLayer = Layers->getSize() - 1;
+	++activeLayer;
+	Layers->addLayer(width, height, activeLayer);
 }
 
 
