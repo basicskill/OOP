@@ -10,5 +10,7 @@ Slike*/
 .vscode/
 Relese/
 build/
+build/*
+build.sh
 tags
 test_primeri/

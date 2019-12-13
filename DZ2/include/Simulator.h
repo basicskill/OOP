@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include "Graph.h"
 
 using namespace std;
 
@@ -11,7 +12,7 @@ class Simulator {
         void simulate(const string& filepath);
         ~Simulator();
     private:
-        // Graph circuit_;
+        Graph* circuit_;
         double freq_;
-        double curr_time, max_time_;
+        double curr_time_, max_time_;
 };
