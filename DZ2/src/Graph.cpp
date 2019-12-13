@@ -3,41 +3,70 @@
 #include <string>
 #include <vector>
 #include "../include/Graph.h"
+#include "../include/Element.h"
 
 using namespace std;
 
 Graph::Graph(const string& filepath) {
-    ifstream inFile (filepath);
-    int maxTime;
-    inFile >> maxTime;
-    inFile >> numb_of_elements_;
-
+    ifstream inFile(filepath);
+    int simTime, numberOfElements;
     int elementType, id;
-    string info;
-    elements_.reserve(numb_of_elements_);
-    for (int i = 0; i < numb_of_elements_; i++) {
+
+    inFile >> simTime;
+    inFile >> numberOfElements;
+
+    min_frequency_ = simTime;
+
+    elements_.resize(numberOfElements);
+    for (int i = 0; i < numberOfElements; i++) {
         inFile >> id;
         inFile >> elementType;
+
         // TODO: input all elements
         switch (elementType) {
+
+            // Sonda
             case 0:
-                cout << "Type: " << elementType << endl;
+                elements_[i] = new Sonda(id);
+                sonde_.push_back(i);
                 break;
+            
+            // waveSource
             case 1:
-                cout << "Type: " << elementType << endl;
+                double frequency;
+                inFile >> frequency;                
+                elements_[i] = new waveSource(id, simTime, frequency);
+                if (frequency < min_frequency_)
+                    min_frequency_ = frequency;
                 break;
         
             default:
                 // TODO: trow exception
                 cout << "Unrecognized type!!" << endl;
                 break;
+
         }
-        getline(inFile, info, '\n');
-        cout << info << endl;
-        elements_[i] = id; // !!!
     }
+
+    int from, to, inNumber;
+    while (inFile.peek() != EOF) {
+        inFile >> from >> to >> inNumber;
+        cout << from << " " << to << endl;
+        findByID(to)->connectInput(findByID(from));
+    }
+    
+    inFile.close();
+}
+
+Element* Graph::findByID(int id) {
+    for (auto it : elements_)
+        if (it->getID() == id)
+            return it;
+    // Trow exception
 }
 
 Graph::~Graph() {
-    // Free every vector element;
+    // Free every vector element
+    for (int i = 0; i < elements_.size(); i++)
+        delete elements_[i];
 }

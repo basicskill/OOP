@@ -13,6 +13,6 @@ class Simulator {
         ~Simulator();
     private:
         Graph* circuit_;
-        double freq_;
+        double frequency_;
         double curr_time_, max_time_;
 };
