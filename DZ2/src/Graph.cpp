@@ -9,6 +9,19 @@
 
 using namespace std;
 
+// double NZD(double a, double b) {
+//     if (a == 0) 
+//         return b;
+//     else {
+//         while (b >= 0) {
+//             cout << "(" << a << "--" << b;
+//             if (a > b) a = a - b;
+//             else b = b - a;
+//         }
+//     }
+//     return a;
+// }
+
 Graph::Graph(const string& filepath) {
     ifstream inFile(filepath);
     int simTime, numberOfElements;
@@ -73,7 +86,6 @@ Graph::Graph(const string& filepath) {
     }
 
 
-
     int from, to, inNumber;
     while (inFile.peek() != EOF) {
         inFile >> from >> to >> inNumber;
@@ -107,7 +119,6 @@ void Graph::update(double currTime) {
                 notUpdated.pop();
             }
         }
-        
         
     }
 }

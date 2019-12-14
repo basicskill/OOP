@@ -28,7 +28,13 @@ void NOT::updateOutput(double currTime) {
 void AND::updateOutput(double currTime) {
     output_ = true;
     for (Element* it : input_) {
-        cout << it->getOutput() << " ";
         output_ = output_ && it->getOutput();
+    }
+}
+
+void OR::updateOutput(double currTime) {
+    output_ = false;
+    for (Element* it : input_) {
+        output_ = output_ || it->getOutput();
     }
 }

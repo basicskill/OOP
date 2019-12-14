@@ -29,3 +29,10 @@ class AND : public Gate {
         void updateOutput(double currTime) override;
         ~AND();
 };
+
+class OR : public Gate {
+    public:
+        OR(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
+        void updateOutput(double currTime) override;
+        ~OR();
+};

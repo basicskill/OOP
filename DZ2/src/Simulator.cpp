@@ -6,16 +6,6 @@
 
 using namespace std;
 
-double NZD(double a, double b) {
-    if (a == 0) 
-        return b;
-    else {
-        while (b != 0)
-            if (a > b) a = a - b;
-            else b = b - a;
-    }
-}
-
 
 void Simulator::loadCircuit(const string& filepath) {
 
