@@ -2,18 +2,30 @@
 
 #include "Element.h"
 
-class Sonda : public Element {
+class Gate : public Element{
     public:
-        Sonda(int id);
+        Gate(int id, int numberOfPorts);
+        virtual void connectInput(Element* input, int port);
+        virtual void updateOutput(double currTime) = 0;
+};
+
+class Sonda : public Gate {
+    public:
+        Sonda(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
         void updateOutput(double currTime) override;
-        void connectInput(Element* input, int port) override;
         ~Sonda();
 };
 
-class NOT : public Element {
+class NOT : public Gate {
     public:
-        NOT(int id);
+        NOT(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
         void updateOutput(double currTime) override;
-        void connectInput(Element* input, int port) override;
         ~NOT();
+};
+
+class AND : public Gate {
+    public:
+        AND(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
+        void updateOutput(double currTime) override;
+        ~AND();
 };

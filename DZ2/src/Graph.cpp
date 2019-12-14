@@ -12,7 +12,7 @@ using namespace std;
 Graph::Graph(const string& filepath) {
     ifstream inFile(filepath);
     int simTime, numberOfElements;
-    int elementType, id;
+    int elementType, id, numberOfPorts;
 
     inFile >> simTime;
     inFile >> numberOfElements;
@@ -23,13 +23,14 @@ Graph::Graph(const string& filepath) {
     for (int i = 0; i < numberOfElements; i++) {
         inFile >> id;
         inFile >> elementType;
+        numberOfPorts = 1;
 
         // TODO: input all elements
         switch (elementType) {
 
             // Sonda
             case 0:
-                elements_[i] = new Sonda(id);
+                elements_[i] = new Sonda(id, numberOfPorts);
                 sonde_.push_back(elements_[i]);
                 break;
             
@@ -49,12 +50,13 @@ Graph::Graph(const string& filepath) {
 
             // NOT gate
             case 3:
-                elements_[i] = new NOT(id);
+                elements_[i] = new NOT(id, numberOfPorts);
                 break;
         
             // AND gate
             case 4:
-                // elements_[i] = new AND(id);
+                inFile >> numberOfElements;
+                elements_[i] = new AND(id, numberOfElements);
                 break;
                 
             // OR gate
