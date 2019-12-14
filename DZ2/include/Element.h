@@ -8,7 +8,7 @@ using namespace std;
 
 class Element {
     public:
-        virtual void connectInput(Element* input) = 0;
+        virtual void connectInput(Element* input, int port) = 0;
         virtual void updateOutput(double currTime) = 0;
         virtual bool getOutput() { return output_; };
         int getID() { return id_; };
@@ -16,23 +16,16 @@ class Element {
         int id_;
         bool output_;
         vector<Element*> input_;
+
+        bool visited_;
         friend class Graph;
 };
 
-class Sonda : public Element {
-    public:
-        Sonda(int id);
-        void updateOutput(double currTime) override;
-        void connectInput(Element* input) override;
-        ~Sonda();
-    private:
-        bool last_state_;
-};
 
 class Source : public Element {
     public:
         void updateOutput(double currTime) override;
-        void connectInput(Element* input) override;
+        void connectInput(Element* input, int port) override;
     protected:
         queue<double> state_changes_;
 };

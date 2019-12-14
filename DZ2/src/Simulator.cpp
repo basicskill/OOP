@@ -20,21 +20,30 @@ void Simulator::loadCircuit(const string& filepath) {
 
 void Simulator::simulate(const string& filepath) {
 
-    // Open file hire
+    vector<ofstream*> outFiles;
+    for (int i = 0; i < circuit_->getSondeSize(); ++i) {
+        ofstream* out(new ofstream);
+        out->open(filepath + "output_" + to_string(i) + ".txt");
+        outFiles.push_back(out);
+    }
 
     bool newState;
     vector<bool> sondaStates(circuit_->getSondeSize());
 
-    for (double time = time_step_; time < max_time_; time += time_step_) {
+
+
+    for (double time = 0; time < max_time_; time += time_step_) {
         circuit_->update(time);
         for (int i = 0; i < sondaStates.size(); ++i) {
             newState = circuit_->measure(i);
             if (newState != sondaStates[i])
-                cout << sondaStates[i] << " -> " << newState
+                (*outFiles[i]) << sondaStates[i] << " -> " << newState
                      << ": " << time << "us" << endl;
             sondaStates[i] = newState;
         }
     }
+    for (int i = 0; i < outFiles.size(); ++i)
+        outFiles[i]->close();
 }
 
 

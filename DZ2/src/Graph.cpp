@@ -5,6 +5,7 @@
 #include <stack>
 #include "../include/Graph.h"
 #include "../include/Element.h"
+#include "../include/Gates.h"
 
 using namespace std;
 
@@ -17,8 +18,8 @@ Graph::Graph(const string& filepath) {
     inFile >> numberOfElements;
 
     min_frequency_ = simTime;
-
     elements_.resize(numberOfElements);
+
     for (int i = 0; i < numberOfElements; i++) {
         inFile >> id;
         inFile >> elementType;
@@ -40,7 +41,27 @@ Graph::Graph(const string& filepath) {
                 if (frequency < min_frequency_)
                     min_frequency_ = frequency;
                 break;
+
+            // arbitrarySource
+            case 2:
+                cout << "FALI!";
+                break;
+
+            // NOT gate
+            case 3:
+                elements_[i] = new NOT(id);
+                break;
         
+            // AND gate
+            case 4:
+                // elements_[i] = new AND(id);
+                break;
+                
+            // OR gate
+            case 5:
+                // elements_[i] = new OR(id);
+                break;
+
             default:
                 // TODO: trow exception
                 cout << "Unrecognized type!!" << endl;
@@ -49,10 +70,12 @@ Graph::Graph(const string& filepath) {
         }
     }
 
+
+
     int from, to, inNumber;
     while (inFile.peek() != EOF) {
         inFile >> from >> to >> inNumber;
-        findByID(to)->connectInput(findByID(from));
+        findByID(to)->connectInput(findByID(from), inNumber);
     }
     
     inFile.close();
@@ -60,30 +83,35 @@ Graph::Graph(const string& filepath) {
 
 
 void Graph::update(double currTime) {
-    for (Element* it : sonde_) {
+    Element* node;
+
+    for (Element* it : elements_)
+        it->visited_ = false;
+
+    for (Element* sonda : sonde_) {
         stack<Element*> notUpdated;
-        Element* node = it;
         
-        while (!notUpdated.empty() || node != nullptr) {
-            if (node != nullptr) {
-                notUpdated.push(node);
-                for (Element* inputNode : node->input_)
-                    notUpdated.push(inputNode);
-                node = nullptr;
+        notUpdated.push(sonda);
+
+        while (!notUpdated.empty()) {
+            node = notUpdated.top();
+            if (!notUpdated.top()->visited_) {
+                node->visited_ = true;
+                for (Element* it : node->input_) 
+                    notUpdated.push(it);
             }
             else {
-                notUpdated.top()->updateOutput(currTime);
+                node->updateOutput(currTime);
                 notUpdated.pop();
             }
         }
+        
         
     }
 }
 
 bool Graph::measure(int sondaNumber) {
-    if (sondaNumber > sonde_.size())
-        cout << "GRESKA"; // Baci exception
-    return sonde_[sondaNumber]->getOutput();
+    return sonde_.at(sondaNumber)->getOutput();
 }
 
 
