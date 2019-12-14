@@ -12,12 +12,11 @@ waveSource::waveSource(int id, const int simTime, double frequency){
         state_changes_.push(i);
 }
 
-bool Source::getOutput(double currTime) {
+void Source::updateOutput(double currTime) {
     if (state_changes_.front() <= currTime) {
         output_ = !output_;
         state_changes_.pop();
     }
-    return output_;
 }
 
 void Source::connectInput(Element* input) {

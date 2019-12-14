@@ -2,6 +2,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
+#include <stack>
 #include "../include/Graph.h"
 #include "../include/Element.h"
 
@@ -28,7 +29,7 @@ Graph::Graph(const string& filepath) {
             // Sonda
             case 0:
                 elements_[i] = new Sonda(id);
-                sonde_.push_back(i);
+                sonde_.push_back(elements_[i]);
                 break;
             
             // waveSource
@@ -51,12 +52,40 @@ Graph::Graph(const string& filepath) {
     int from, to, inNumber;
     while (inFile.peek() != EOF) {
         inFile >> from >> to >> inNumber;
-        cout << from << " " << to << endl;
         findByID(to)->connectInput(findByID(from));
     }
     
     inFile.close();
 }
+
+
+void Graph::update(double currTime) {
+    for (Element* it : sonde_) {
+        stack<Element*> notUpdated;
+        Element* node = it;
+        
+        while (!notUpdated.empty() || node != nullptr) {
+            if (node != nullptr) {
+                notUpdated.push(node);
+                for (Element* inputNode : node->input_)
+                    notUpdated.push(inputNode);
+                node = nullptr;
+            }
+            else {
+                notUpdated.top()->updateOutput(currTime);
+                notUpdated.pop();
+            }
+        }
+        
+    }
+}
+
+bool Graph::measure(int sondaNumber) {
+    if (sondaNumber > sonde_.size())
+        cout << "GRESKA"; // Baci exception
+    return sonde_[sondaNumber]->getOutput();
+}
+
 
 Element* Graph::findByID(int id) {
     for (auto it : elements_)

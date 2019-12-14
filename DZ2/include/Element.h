@@ -2,36 +2,39 @@
 
 #include <queue>
 #include <string>
+#include <vector>
 
 using namespace std;
 
 class Element {
     public:
-        virtual bool getOutput(double currTime) = 0;
         virtual void connectInput(Element* input) = 0;
+        virtual void updateOutput(double currTime) = 0;
+        virtual bool getOutput() { return output_; };
         int getID() { return id_; };
     protected:
         int id_;
+        bool output_;
+        vector<Element*> input_;
+        friend class Graph;
 };
 
 class Sonda : public Element {
     public:
         Sonda(int id);
-        bool getOutput(double currTime) override;
+        void updateOutput(double currTime) override;
         void connectInput(Element* input) override;
         ~Sonda();
     private:
-        bool output_;
-        Element* input_;
+        bool last_state_;
 };
 
 class Source : public Element {
     public:
-        bool getOutput(double currTime) override;
+        void updateOutput(double currTime) override;
         void connectInput(Element* input) override;
     protected:
         queue<double> state_changes_;
-        bool output_;
 };
 
 class waveSource : public Source {

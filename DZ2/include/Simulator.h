@@ -7,12 +7,12 @@ using namespace std;
 
 class Simulator {
     public:
-        Simulator();
+        Simulator(): time_step_(0), max_time_(0) {};
         void loadCircuit(const string& filepath);
         void simulate(const string& filepath);
         ~Simulator();
     private:
         Graph* circuit_;
-        double frequency_;
-        double curr_time_, max_time_;
+        double time_step_;
+        double max_time_;
 };
