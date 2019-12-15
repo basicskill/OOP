@@ -12,7 +12,7 @@ class Graph {
         Element* findByID(int id);
         void update(double currTime);
 
-        double getFrequency() { return min_frequency_; };
+        double getPeriod() { return max_period_; };
         int getSondeSize() { return sonde_.size(); };
         bool measure(int sondaNumber);
 
@@ -21,5 +21,5 @@ class Graph {
     private:
         vector<Element*> elements_;
         vector<Element*> sonde_;
-        double min_frequency_;
+        double max_period_;
 };

@@ -14,7 +14,7 @@ void Simulator::loadCircuit(const string& filepath) {
     inFile.close();
 
     circuit_ = new Graph(filepath);
-    time_step_ = circuit_->getFrequency() / 2;
+    time_step_ = circuit_->getPeriod() / 2;
 
 }
 

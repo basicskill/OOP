@@ -9,18 +9,7 @@
 
 using namespace std;
 
-// double NZD(double a, double b) {
-//     if (a == 0) 
-//         return b;
-//     else {
-//         while (b >= 0) {
-//             cout << "(" << a << "--" << b;
-//             if (a > b) a = a - b;
-//             else b = b - a;
-//         }
-//     }
-//     return a;
-// }
+double vectorNZD(vector<double> timeStamps);
 
 Graph::Graph(const string& filepath) {
     ifstream inFile(filepath);
@@ -30,8 +19,9 @@ Graph::Graph(const string& filepath) {
     inFile >> simTime;
     inFile >> numberOfElements;
 
-    min_frequency_ = simTime;
+    max_period_ = simTime;
     elements_.resize(numberOfElements);
+    vector<double> state_changes_;
 
     for (int i = 0; i < numberOfElements; i++) {
         inFile >> id;
@@ -48,40 +38,51 @@ Graph::Graph(const string& filepath) {
                 break;
             
             // waveSource
-            case 1:
+            case 1: {
                 double frequency;
                 inFile >> frequency;                
                 elements_[i] = new waveSource(id, simTime, frequency);
-                if (frequency < min_frequency_)
-                    min_frequency_ = frequency;
+                max_period_ = NZD(max_period_, frequency);
                 break;
+            }
 
             // arbitrarySource
-            case 2:
-                cout << "FALI!";
+            case 2: {
+                state_changes_.clear();
+                string line;
+                getline(inFile, line);
+                state_changes_.push_back(atof(line.c_str()));
+                double arbFrequency = vectorNZD(state_changes_);
+                elements_[i] = new arbitrarySource(id, state_changes_);
+                max_period_ = NZD(max_period_, arbFrequency);
                 break;
+            }
 
             // NOT gate
-            case 3:
+            case 3: {
                 elements_[i] = new NOT(id, numberOfPorts);
                 break;
+            }
         
             // AND gate
-            case 4:
+            case 4: {
                 inFile >> numberOfElements;
                 elements_[i] = new AND(id, numberOfElements);
                 break;
+            }
                 
             // OR gate
-            case 5:
-                // elements_[i] = new OR(id);
+            case 5: {
+                inFile >> numberOfElements;
+                elements_[i] = new OR(id, numberOfElements);
                 break;
+            }
 
-            default:
+            default: {
                 // TODO: trow exception
                 cout << "Unrecognized type!!" << endl;
                 break;
-
+            }
         }
     }
 
@@ -139,4 +140,10 @@ Graph::~Graph() {
     // Free every vector element
     for (int i = 0; i < elements_.size(); i++)
         delete elements_[i];
+}
+
+double vectorNZD(vector<double> timeStamps) {
+    double minFreq = 0;
+    for (int i = 1; i < timeStamps.size(); ++i)
+        minFreq = NZD(minFreq, timeStamps[i] - timeStamps[i-1]);
 }
