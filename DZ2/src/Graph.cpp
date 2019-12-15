@@ -9,7 +9,6 @@
 
 using namespace std;
 
-double vectorNZD(vector<double> timeStamps);
 
 Graph::Graph(const string& filepath) {
     ifstream inFile(filepath);
@@ -21,7 +20,7 @@ Graph::Graph(const string& filepath) {
 
     max_period_ = simTime;
     elements_.resize(numberOfElements);
-    vector<double> state_changes_;
+    vector<double> stateChanges;
 
     for (int i = 0; i < numberOfElements; i++) {
         inFile >> id;
@@ -42,19 +41,16 @@ Graph::Graph(const string& filepath) {
                 double frequency;
                 inFile >> frequency;                
                 elements_[i] = new waveSource(id, simTime, frequency);
-                max_period_ = NZD(max_period_, frequency);
                 break;
             }
 
             // arbitrarySource
             case 2: {
-                state_changes_.clear();
-                string line;
-                getline(inFile, line);
-                state_changes_.push_back(atof(line.c_str()));
-                double arbFrequency = vectorNZD(state_changes_);
-                elements_[i] = new arbitrarySource(id, state_changes_);
-                max_period_ = NZD(max_period_, arbFrequency);
+                string sequence;
+                stateChanges.clear();
+                getline(inFile, sequence);
+
+                elements_[i] = new arbitrarySource(id, sequence);
                 break;
             }
 
@@ -66,15 +62,15 @@ Graph::Graph(const string& filepath) {
         
             // AND gate
             case 4: {
-                inFile >> numberOfElements;
-                elements_[i] = new AND(id, numberOfElements);
+                inFile >> numberOfPorts;
+                elements_[i] = new AND(id, numberOfPorts);
                 break;
             }
                 
             // OR gate
             case 5: {
-                inFile >> numberOfElements;
-                elements_[i] = new OR(id, numberOfElements);
+                inFile >> numberOfPorts;
+                elements_[i] = new OR(id, numberOfPorts);
                 break;
             }
 
@@ -140,10 +136,4 @@ Graph::~Graph() {
     // Free every vector element
     for (int i = 0; i < elements_.size(); i++)
         delete elements_[i];
-}
-
-double vectorNZD(vector<double> timeStamps) {
-    double minFreq = 0;
-    for (int i = 1; i < timeStamps.size(); ++i)
-        minFreq = NZD(minFreq, timeStamps[i] - timeStamps[i-1]);
 }

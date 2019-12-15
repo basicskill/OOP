@@ -1,6 +1,7 @@
 #include <queue>
 #include <string>
 #include <iostream>
+#include <sstream>
 #include "../include/Element.h"
 
 using namespace std;
@@ -26,26 +27,15 @@ void Source::connectInput(Element* input, int port) {
     cout << "GRESKA" << endl;
 }
 
-arbitrarySource::arbitrarySource(int id, vector<double> relativeChanges){
+arbitrarySource::arbitrarySource(int id, string& relativeChanges){
     id_ = id;
     output_ = false;
-    double time = 0;
+    double time = 0, tmp;
+
+    stringstream ss(relativeChanges);
     for (int i = 0; i < relativeChanges.size(); ++i) {
-        time += relativeChanges[i];
+        ss >> tmp;
+        time += tmp;
         state_changes_.push(time);
     }
-}
-
-double NZD(double a1, double b1) {
-    int a = a1 * 1000;
-    int b = b1 * 1000;
-
-    if (a == 0) 
-        return b;
-    else {
-        while (b > 0)
-            if (a > b) a = a - b;
-            else b = b - a;
-    }
-    return ((double) a) / 1000;
 }

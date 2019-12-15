@@ -8,13 +8,12 @@ using namespace std;
 
 
 void Simulator::loadCircuit(const string& filepath) {
-
     ifstream inFile(filepath);
     inFile >> max_time_;
     inFile.close();
 
     circuit_ = new Graph(filepath);
-    time_step_ = circuit_->getPeriod() / 2;
+    time_step_ = 0.05; // PRAVO MESTO?
 
 }
 
@@ -30,8 +29,6 @@ void Simulator::simulate(const string& filepath) {
 
     bool newState;
     vector<bool> sondaStates(circuit_->getSondeSize());
-
-
 
     for (double time = 0; time < max_time_; time += time_step_) {
         circuit_->update(time);

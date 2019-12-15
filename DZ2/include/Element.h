@@ -38,10 +38,8 @@ class waveSource : public Source {
 
 class arbitrarySource : public Source {
     public:
-        arbitrarySource(int id, vector<double> relativeChanges);
+        arbitrarySource(int id, string& relativeChanges);
         ~arbitrarySource();
     private:
         double frequency_;
 };
-
-double NZD(double a1, double b1);
