@@ -8,11 +8,8 @@
 using namespace std;
 
 // Initialize WaveSource object and calculate state changes of source
-WaveSource::WaveSource(int id, const int simTime, double frequency) {
-
-    // Init id and output
-    id_ = id;
-    output_ = false;
+WaveSource::WaveSource(int id, const int simTime, double frequency) 
+    : Source { id } {
 
     // Wave period is inverse to frequency
     double period = 1 / frequency;
@@ -41,11 +38,8 @@ void Source::connectInput(Element* input, int port) {
 }
 
 // Init ArbitrarySource from string of realtive state changes
-ArbitrarySource::ArbitrarySource(int id, string& relativeChanges){
-
-    // Init id and output
-    id_ = id;
-    output_ = false;
+ArbitrarySource::ArbitrarySource(int id, string& relativeChanges) 
+    : Source { id } {
 
     // Read each time stamp from 'realtiveChanges' string
     // convert it to apsolut time stamps, and push it to

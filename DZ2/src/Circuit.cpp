@@ -35,14 +35,13 @@ Circuit::Circuit(const string& filepath) {
         // Load id and type
         inFile >> id;
         inFile >> elementType;
-        numberOfPorts = 1;
 
         // Choose constructor based on 'elementType'
         switch (elementType) {
 
             // Probe
             case 0: {
-                elements_[i] = new Probe(id, numberOfPorts);
+                elements_[i] = new Probe(id);
                 probes_.push_back(elements_[i]);
                 break;
             }
@@ -73,7 +72,7 @@ Circuit::Circuit(const string& filepath) {
 
             // NOT gate
             case 3: {
-                elements_[i] = new NOT(id, numberOfPorts);
+                elements_[i] = new NOT(id);
                 break;
             }
         

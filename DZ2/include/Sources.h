@@ -8,6 +8,7 @@
 // Abstract class for Source Element
 class Source : public Element {
     public:
+        Source(int id) : Element { id } {};
         void updateOutput(double currTime) override;
         void connectInput(Element* input, int port) override;
     protected:

@@ -4,9 +4,9 @@
 
 // Derived class of Element for gate elements
 // Gate is element that changes its output based on its inputs
-class Gate : public Element{
+class Gate : public Element {
     public:
-        Gate(int id, int numberOfPorts);
+        Gate(int id, int = 1);
         virtual void connectInput(Element* input, int port);
         virtual void updateOutput(double currTime) = 0;
 };
@@ -15,7 +15,7 @@ class Gate : public Element{
 // Probe is element that has output equal to its input
 class Probe : public Gate {
     public:
-        Probe(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
+        Probe(int id) : Gate { id } {};
         void updateOutput(double currTime) override;
         ~Probe();
 };
@@ -23,7 +23,7 @@ class Probe : public Gate {
 // Derived class of Gate for NOT gate
 class NOT : public Gate {
     public:
-        NOT(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
+        NOT(int id) : Gate { id } {};
         void updateOutput(double currTime) override;
         ~NOT();
 };

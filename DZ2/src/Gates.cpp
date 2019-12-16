@@ -4,9 +4,7 @@
 using namespace std;
 
 // Init id, output and number of ports
-Gate::Gate(int id, int numberOfPorts) {
-    id_     = id;
-    output_ = false;
+Gate::Gate(int id, int numberOfPorts) : Element { id } {
     input_.resize(numberOfPorts);
 }
 
