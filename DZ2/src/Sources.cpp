@@ -1,4 +1,5 @@
 #include <queue>
+#include <stdexcept>
 #include <string>
 #include <sstream>
 #include "../include/Element.h"
@@ -20,8 +21,7 @@ void Source::updateOutput(double currTime) {
 // Source doesn't have input ports
 // Trow exception if method is called
 void Source::connectInput(Element* input, int port) {
-    // TODO: trow exception
-    // cout << "GRESKA" << endl;
+    throw invalid_argument("Source element doesn't have input ports!");
 }
 
 /* WaveSource */

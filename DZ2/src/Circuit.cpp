@@ -99,9 +99,9 @@ Circuit::Circuit(const string& filepath) {
 
             }
 
-            // If element is not predefined, trow exception
+            // If element is not predefined, throw exception
             default: {
-                throw invalid_argument( "received negative value" );
+                throw invalid_argument("Unrecognized type number!");
                 break;
             }
         }
@@ -175,7 +175,7 @@ Element* Circuit::findByID(int id) {
     for (auto it : elements_)
         if (it->getID() == id)
             return it;
-    // Trow exception
+    throw invalid_argument("ID doesn't exist");
 }
 
 // Free every element in vector of elements
