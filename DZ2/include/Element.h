@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// Abstract class for circuit Element
 class Element {
     public:
         virtual void connectInput(Element* input, int port) = 0;

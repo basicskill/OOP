@@ -10,49 +10,65 @@
 
 using namespace std;
 
-
+// Initialize circuit elements from 'filepath'
+// Connect each element from definitions in second part
+// of file at 'filepath'
 Circuit::Circuit(const string& filepath) {
-    ifstream inFile(filepath);
+
     int simTime, numberOfElements;
     int elementType, id, numberOfPorts;
 
+    // Open file for reading
+    ifstream inFile(filepath);
+
+    // Load simulation time and number of elements from
+    // top of the file
     inFile >> simTime;
     inFile >> numberOfElements;
 
-    max_period_ = simTime;
+    // Reserve space for 'numberOfElements'
     elements_.resize(numberOfElements);
-    vector<double> stateChanges;
 
+    // Initialize every element
     for (int i = 0; i < numberOfElements; i++) {
+
+        // Load id and type
         inFile >> id;
         inFile >> elementType;
         numberOfPorts = 1;
 
-        // TODO: input all elements
+        // Choose constructor based on 'elementType'
         switch (elementType) {
 
             // Probe
-            case 0:
+            case 0: {
                 elements_[i] = new Probe(id, numberOfPorts);
                 probes_.push_back(elements_[i]);
                 break;
+            }
             
-            // waveSource
+            // WaveSource
             case 1: {
+
+                // Load additional element specification
                 double frequency;
                 inFile >> frequency;                
-                elements_[i] = new waveSource(id, simTime, frequency);
+
+                elements_[i] = new WaveSource(id, simTime, frequency);
                 break;
+
             }
 
-            // arbitrarySource
+            // ArbitrarySource
             case 2: {
+
+                // Load additional element specification
                 string sequence;
-                stateChanges.clear();
                 getline(inFile, sequence);
 
-                elements_[i] = new arbitrarySource(id, sequence);
+                elements_[i] = new ArbitrarySource(id, sequence);
                 break;
+
             }
 
             // NOT gate
@@ -63,18 +79,27 @@ Circuit::Circuit(const string& filepath) {
         
             // AND gate
             case 4: {
+
+                // Read number of ports
                 inFile >> numberOfPorts;
+
                 elements_[i] = new AND(id, numberOfPorts);
                 break;
+
             }
                 
             // OR gate
             case 5: {
+
+                // Read number of ports
                 inFile >> numberOfPorts;
+
                 elements_[i] = new OR(id, numberOfPorts);
                 break;
+
             }
 
+            // If element is not predefined, trow exception
             default: {
                 // TODO: trow exception
                 cout << "Unrecognized type!!" << endl;
@@ -83,20 +108,23 @@ Circuit::Circuit(const string& filepath) {
         }
     }
 
-
+    // Read element connections until end of file
     int from, to, inNumber;
     while (inFile.peek() != EOF) {
         inFile >> from >> to >> inNumber;
         findByID(to)->connectInput(findByID(from), inNumber);
     }
     
+    // Close input file
     inFile.close();
+
 }
 
-
+// Calculate state of each element in time defined by 'currTIme'
 void Circuit::update(double currTime) {
+    // TODO: Probaj drugacije parsiranje
+    // TODO: Komentarisi
     Element* node;
-
     for (Element* it : elements_)
         it->visited_ = false;
 
@@ -121,11 +149,13 @@ void Circuit::update(double currTime) {
     }
 }
 
-bool Circuit::measure(int probeNumber) {
+// Return output of probe at 'probeNumber' position
+// in 'probes_' list
+bool Circuit::getProbeOutput(int probeNumber) {
     return probes_.at(probeNumber)->getOutput();
 }
 
-
+// Return pointer to Circuit element with given ID
 Element* Circuit::findByID(int id) {
     for (auto it : elements_)
         if (it->getID() == id)
@@ -133,8 +163,8 @@ Element* Circuit::findByID(int id) {
     // Trow exception
 }
 
+// Free every element in vector of elements
 Circuit::~Circuit() {
-    // Free every vector element
     for (int i = 0; i < elements_.size(); i++)
         delete elements_[i];
 }

@@ -52,7 +52,7 @@ void Simulator::simulate(const string& filepath) {
 
         // Check if output has changed for every probe 
         for (int i = 0; i < probeStates.size(); ++i) {
-            newState = circuit_->measure(i);
+            newState = circuit_->getProbeOutput(i);
             if (newState != probeStates[i])
                 (*outFiles[i]) << probeStates[i] << " -> " << newState
                      << ": " << time << "us" << endl;

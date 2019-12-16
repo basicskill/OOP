@@ -5,6 +5,7 @@
 #include <vector>
 #include "Element.h"
 
+// Abstract class for Source Element
 class Source : public Element {
     public:
         void updateOutput(double currTime) override;
@@ -13,16 +14,20 @@ class Source : public Element {
         queue<double> state_changes_;
 };
 
-class waveSource : public Source {
+// Derived class of Source with wave output defined with frequency
+// given to constructior
+class WaveSource : public Source {
     public:
-        waveSource(int id, const int simTime, double frequency);
-        ~waveSource();
+        WaveSource(int id, const int simTime, double frequency);
+        ~WaveSource();
 };
 
-class arbitrarySource : public Source {
+// Derived class of Source with output that changes defined by
+// string of relative output changes given to constructor
+class ArbitrarySource : public Source {
     public:
-        arbitrarySource(int id, string& relativeChanges);
-        ~arbitrarySource();
+        ArbitrarySource(int id, string& relativeChanges);
+        ~ArbitrarySource();
     private:
         double frequency_;
 };
