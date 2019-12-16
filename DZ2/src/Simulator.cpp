@@ -1,7 +1,7 @@
 #include <fstream>
 #include <string>
-#include "../include/Simulator.h"
 #include "../include/Circuit.h"
+#include "../include/Simulator.h"
 
 using namespace std;
 

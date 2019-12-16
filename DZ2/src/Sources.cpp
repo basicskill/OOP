@@ -1,6 +1,6 @@
 #include <queue>
-#include <sstream>
 #include <string>
+#include <sstream>
 #include "../include/Element.h"
 #include "../include/Sources.h"
 

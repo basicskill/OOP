@@ -1,12 +1,12 @@
-#include <iostream>
 #include <fstream>
+#include <stack>
 #include <string>
 #include <vector>
-#include <stack>
 #include "../include/Circuit.h"
 #include "../include/Element.h"
 #include "../include/Gates.h"
 #include "../include/Sources.h"
+
 
 using namespace std;
 
@@ -101,7 +101,7 @@ Circuit::Circuit(const string& filepath) {
             // If element is not predefined, trow exception
             default: {
                 // TODO: trow exception
-                cout << "Unrecognized type!!" << endl;
+                // cout << "Unrecognized type!!" << endl;
                 break;
             }
         }
