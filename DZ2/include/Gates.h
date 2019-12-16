@@ -9,11 +9,11 @@ class Gate : public Element{
         virtual void updateOutput(double currTime) = 0;
 };
 
-class Sonda : public Gate {
+class Probe : public Gate {
     public:
-        Sonda(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
+        Probe(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
         void updateOutput(double currTime) override;
-        ~Sonda();
+        ~Probe();
 };
 
 class NOT : public Gate {

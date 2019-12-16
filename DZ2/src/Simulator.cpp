@@ -34,14 +34,14 @@ void Simulator::simulate(const string& filepath) {
     // Create file for every probe and open that file
     // Place ofstream pointers in outFiles vector
     vector<ofstream*> outFiles;
-    for (int i = 0; i < circuit_->getSondeSize(); ++i) {
+    for (int i = 0; i < circuit_->getProbesSize(); ++i) {
         ofstream* out(new ofstream);
         out->open(filepath + "output_" + to_string(i) + ".txt");
         outFiles.push_back(out);
     }
 
     // Keep state of probe in previous time step
-    vector<bool> sondaStates(circuit_->getSondeSize());
+    vector<bool> probeStates(circuit_->getProbesSize());
     bool newState;
 
     // Simulate circuit for each time step
@@ -51,12 +51,12 @@ void Simulator::simulate(const string& filepath) {
         circuit_->update(time);
 
         // Check if output has changed for every probe 
-        for (int i = 0; i < sondaStates.size(); ++i) {
+        for (int i = 0; i < probeStates.size(); ++i) {
             newState = circuit_->measure(i);
-            if (newState != sondaStates[i])
-                (*outFiles[i]) << sondaStates[i] << " -> " << newState
+            if (newState != probeStates[i])
+                (*outFiles[i]) << probeStates[i] << " -> " << newState
                      << ": " << time << "us" << endl;
-            sondaStates[i] = newState;
+            probeStates[i] = newState;
         }
 
     }

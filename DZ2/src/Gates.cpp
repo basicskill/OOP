@@ -15,7 +15,7 @@ void Gate::connectInput(Element* input, int port) {
 
 
 
-void Sonda::updateOutput(double currTime) {
+void Probe::updateOutput(double currTime) {
     output_ = input_.front()->getOutput();
 }
 

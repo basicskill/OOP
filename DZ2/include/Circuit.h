@@ -13,13 +13,13 @@ class Circuit {
         void update(double currTime);
 
         double getPeriod() { return max_period_; };
-        int getSondeSize() { return sonde_.size(); };
-        bool measure(int sondaNumber);
+        int getProbesSize() { return probes_.size(); };
+        bool measure(int probeNumber);
 
         ~Circuit();
 
     private:
         vector<Element*> elements_;
-        vector<Element*> sonde_;
+        vector<Element*> probes_;
         double max_period_;
 };

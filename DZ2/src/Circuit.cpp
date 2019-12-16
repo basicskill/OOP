@@ -31,10 +31,10 @@ Circuit::Circuit(const string& filepath) {
         // TODO: input all elements
         switch (elementType) {
 
-            // Sonda
+            // Probe
             case 0:
-                elements_[i] = new Sonda(id, numberOfPorts);
-                sonde_.push_back(elements_[i]);
+                elements_[i] = new Probe(id, numberOfPorts);
+                probes_.push_back(elements_[i]);
                 break;
             
             // waveSource
@@ -100,10 +100,10 @@ void Circuit::update(double currTime) {
     for (Element* it : elements_)
         it->visited_ = false;
 
-    for (Element* sonda : sonde_) {
+    for (Element* probe : probes_) {
         stack<Element*> notUpdated;
         
-        notUpdated.push(sonda);
+        notUpdated.push(probe);
 
         while (!notUpdated.empty()) {
             node = notUpdated.top();
@@ -121,8 +121,8 @@ void Circuit::update(double currTime) {
     }
 }
 
-bool Circuit::measure(int sondaNumber) {
-    return sonde_.at(sondaNumber)->getOutput();
+bool Circuit::measure(int probeNumber) {
+    return probes_.at(probeNumber)->getOutput();
 }
 
 

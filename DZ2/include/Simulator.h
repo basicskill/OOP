@@ -8,7 +8,7 @@ using namespace std;
 // Class simulating output of logical circuit
 class Simulator {
     public:
-        Simulator(): time_step_(0), max_time_(0) {};
+        Simulator(): time_step_(0), max_time_(0), circuit_(nullptr) {};
         void loadCircuit(const string& filepath);
         void simulate(const string& filepath);
         ~Simulator();
