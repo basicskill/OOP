@@ -5,6 +5,9 @@
 
 using namespace std;
 
+// Init Simulator parameters
+Simulator::Simulator(): time_step_(0), max_time_(0), circuit_(nullptr) {};
+
 // Initialize circuit Circuit object, max_time_ and time_step_ 
 // loaded from file at 'filepath'
 void Simulator::loadCircuit(const string& filepath) {
@@ -32,14 +35,15 @@ void Simulator::simulate(const string& filepath) {
     // Create file for every probe and open that file
     // Place ofstream pointers in outFiles vector
     vector<ofstream*> outFiles;
-    for (int i = 0; i < circuit_->getProbesSize(); ++i) {
+    for (Element* probe : circuit_->getProbes()) {
         ofstream* out(new ofstream);
-        out->open(filepath + "output_" + to_string(i) + ".txt");
+        out->open(filepath.substr(0, filepath.size()-4) + "_" 
+                    + to_string(probe->getID()) + ".txt");
         outFiles.push_back(out);
     }
 
     // Keep state of probe in previous time step
-    vector<bool> probeStates(circuit_->getProbesSize());
+    vector<bool> probeStates(circuit_->getProbes().size());
     bool newState;
 
     // Simulate circuit for each time step

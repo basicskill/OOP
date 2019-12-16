@@ -13,7 +13,7 @@ class Circuit {
         Element* findByID(int id);
         void update(double currTime);
 
-        int getProbesSize() { return probes_.size(); };
+        vector<Element*> getProbes();
         bool getProbeOutput(int probeNumber);
 
         ~Circuit();

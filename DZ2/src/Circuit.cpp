@@ -169,6 +169,9 @@ void Circuit::update(double currTime) {
 bool Circuit::getProbeOutput(int probeNumber) {
     return probes_.at(probeNumber)->getOutput();
 }
+vector<Element*> Circuit::getProbes() {
+    return probes_;
+}
 
 // Return pointer to Circuit element with given ID
 Element* Circuit::findByID(int id) {
