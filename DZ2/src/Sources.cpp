@@ -7,6 +7,7 @@
 
 using namespace std;
 
+
 waveSource::waveSource(int id, const int simTime, double frequency) {
     id_ = id;
     output_ = false;
