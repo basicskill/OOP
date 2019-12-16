@@ -8,6 +8,10 @@ bool Element::getOutput() {
     return output_; 
 }
 
+vector<Element*> Element::getInput() {
+    return input_;
+}
+
 // Return ID of element
 int Element::getID() { 
     return id_; 

@@ -13,12 +13,10 @@ class Element {
         virtual void connectInput(Element* input, int port) = 0;
         virtual void updateOutput(double currTime) = 0;
         virtual bool getOutput();
+        vector<Element*> getInput();
         int getID();
     protected:
         int id_;
         bool output_;
         vector<Element*> input_;
-
-        bool visited_;
-        friend class Circuit;
 };

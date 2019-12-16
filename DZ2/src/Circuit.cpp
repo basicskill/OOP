@@ -1,5 +1,6 @@
 #include <fstream>
 #include <stack>
+#include <stdexcept>
 #include <string>
 #include <vector>
 #include "../include/Circuit.h"
@@ -100,8 +101,7 @@ Circuit::Circuit(const string& filepath) {
 
             // If element is not predefined, trow exception
             default: {
-                // TODO: trow exception
-                // cout << "Unrecognized type!!" << endl;
+                throw invalid_argument( "received negative value" );
                 break;
             }
         }
@@ -120,29 +120,45 @@ Circuit::Circuit(const string& filepath) {
 }
 
 // Calculate state of each element in time defined by 'currTIme'
+// State is calculated with postorder tree traversal
 void Circuit::update(double currTime) {
-    // TODO: Probaj drugacije parsiranje
-    // TODO: Komentarisi
-    Element* node;
-    for (Element* it : elements_)
-        it->visited_ = false;
 
+    // Local pointers for tree traversal
+    Element* node; 
+    Element* lastVisited;
+
+    // Stack used to avoid recursion in traversal
+    stack<Element*> notUpdated;
+
+    // For each probe update its output
     for (Element* probe : probes_) {
-        stack<Element*> notUpdated;
+
+        // Last visited doesn't exist at the begining
+        lastVisited = nullptr;
         
+        // Probe is pushed to stack
         notUpdated.push(probe);
 
+        // Traversal is working until it empties the stack
         while (!notUpdated.empty()) {
+
+            // Set node to top of the stack
             node = notUpdated.top();
-            if (!notUpdated.top()->visited_) {
-                node->visited_ = true;
-                for (Element* it : node->input_) 
-                    notUpdated.push(it);
-            }
-            else {
+
+            // If all node's daughters are already updated, update node
+            // All daughters are updated when the last visited node is 
+            // first node in current node's input_ vector
+            if ((node->getInput().empty()) || (node->getInput().front() == lastVisited)) {
                 node->updateOutput(currTime);
                 notUpdated.pop();
             }
+            // If daughters aren't updated, add them to notUpdated stack
+            else
+                for (Element* it : node->getInput()) 
+                    notUpdated.push(it);
+
+            // Set lastVisited to current node
+            lastVisited = node;
         }
         
     }
