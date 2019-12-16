@@ -6,9 +6,9 @@
 
 using namespace std;
 
-class Graph {
+class Circuit {
     public:
-        Graph(const string& filepath);
+        Circuit(const string& filepath);
         Element* findByID(int id);
         void update(double currTime);
 
@@ -16,7 +16,7 @@ class Graph {
         int getSondeSize() { return sonde_.size(); };
         bool measure(int sondaNumber);
 
-        ~Graph();
+        ~Circuit();
 
     private:
         vector<Element*> elements_;

@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 #include <stack>
-#include "../include/Graph.h"
+#include "../include/Circuit.h"
 #include "../include/Element.h"
 #include "../include/Gates.h"
 #include "../include/Sources.h"
@@ -11,7 +11,7 @@
 using namespace std;
 
 
-Graph::Graph(const string& filepath) {
+Circuit::Circuit(const string& filepath) {
     ifstream inFile(filepath);
     int simTime, numberOfElements;
     int elementType, id, numberOfPorts;
@@ -94,7 +94,7 @@ Graph::Graph(const string& filepath) {
 }
 
 
-void Graph::update(double currTime) {
+void Circuit::update(double currTime) {
     Element* node;
 
     for (Element* it : elements_)
@@ -121,19 +121,19 @@ void Graph::update(double currTime) {
     }
 }
 
-bool Graph::measure(int sondaNumber) {
+bool Circuit::measure(int sondaNumber) {
     return sonde_.at(sondaNumber)->getOutput();
 }
 
 
-Element* Graph::findByID(int id) {
+Element* Circuit::findByID(int id) {
     for (auto it : elements_)
         if (it->getID() == id)
             return it;
     // Trow exception
 }
 
-Graph::~Graph() {
+Circuit::~Circuit() {
     // Free every vector element
     for (int i = 0; i < elements_.size(); i++)
         delete elements_[i];

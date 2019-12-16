@@ -18,5 +18,5 @@ class Element {
         vector<Element*> input_;
 
         bool visited_;
-        friend class Graph;
+        friend class Circuit;
 };

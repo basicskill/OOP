@@ -1,10 +1,11 @@
 #pragma once
 
 #include <string>
-#include "Graph.h"
+#include "Circuit.h"
 
 using namespace std;
 
+// Class simulating output of logical circuit
 class Simulator {
     public:
         Simulator(): time_step_(0), max_time_(0) {};
@@ -12,7 +13,7 @@ class Simulator {
         void simulate(const string& filepath);
         ~Simulator();
     private:
-        Graph* circuit_;
+        Circuit* circuit_;
         double time_step_;
         double max_time_;
 };

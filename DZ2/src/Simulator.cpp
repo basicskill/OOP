@@ -2,17 +2,18 @@
 #include <iostream>
 #include <string>
 #include "../include/Simulator.h"
-#include "../include/Graph.h"
+#include "../include/Circuit.h"
 
 using namespace std;
 
 
+// Initialize circuit Circuit 
 void Simulator::loadCircuit(const string& filepath) {
     ifstream inFile(filepath);
     inFile >> max_time_;
     inFile.close();
 
-    circuit_ = new Graph(filepath);
+    circuit_ = new Circuit(filepath);
     time_step_ = 0.05; // PRAVO MESTO?
 
 }
