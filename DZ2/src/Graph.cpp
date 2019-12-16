@@ -6,6 +6,7 @@
 #include "../include/Graph.h"
 #include "../include/Element.h"
 #include "../include/Gates.h"
+#include "../include/Sources.h"
 
 using namespace std;
 
