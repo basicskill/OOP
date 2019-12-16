@@ -9,11 +9,11 @@ using namespace std;
 // Abstract class for circuit Element
 class Element {
     public:
-        Element(int id) : id_(id), output_(false) {};
+        Element(int id);
         virtual void connectInput(Element* input, int port) = 0;
         virtual void updateOutput(double currTime) = 0;
-        virtual bool getOutput() { return output_; };
-        int getID() { return id_; };
+        virtual bool getOutput();
+        int getID();
     protected:
         int id_;
         bool output_;

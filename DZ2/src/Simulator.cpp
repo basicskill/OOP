@@ -1,11 +1,9 @@
 #include <fstream>
-#include <iostream>
 #include <string>
 #include "../include/Simulator.h"
 #include "../include/Circuit.h"
 
 using namespace std;
-
 
 // Initialize circuit Circuit object, max_time_ and time_step_ 
 // loaded from file at 'filepath'

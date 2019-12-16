@@ -1,7 +1,6 @@
-#include <iostream>
 #include "../include/Gates.h"
 
-using namespace std;
+/* Gate mathods: */
 
 // Init id, output and number of ports
 Gate::Gate(int id, int numberOfPorts) : Element { id } {
@@ -12,6 +11,16 @@ Gate::Gate(int id, int numberOfPorts) : Element { id } {
 void Gate::connectInput(Element* input, int port) {
     input_.at(port) = input;
 }
+
+/* Derived classes: */
+
+// Constructors for derived classes
+Probe::Probe(int id) : Gate { id } {};
+NOT::NOT(int id) : Gate { id } {};
+AND::AND(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
+OR::OR(int id, int numberOfPorts) : Gate { id, numberOfPorts } {};
+
+// updateOutput method for Derived classes of Gate:
 
 // Update Probe output to its input
 void Probe::updateOutput(double currTime) {
