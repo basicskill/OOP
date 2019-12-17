@@ -1,8 +1,8 @@
 #include <queue>
-#include <stdexcept>
 #include <string>
 #include <sstream>
 #include "../include/Element.h"
+#include "../include/CircuitExceptions.h"
 #include "../include/Sources.h"
 
 using namespace std;
@@ -21,7 +21,7 @@ void Source::updateOutput(double currTime) {
 // Source doesn't have input ports
 // Trow exception if method is called
 void Source::connectInput(Element* input, int port) {
-    throw invalid_argument("Source element doesn't have input ports!");
+    throw CircuitException("Source element doesn't have input ports!");
 }
 
 /* WaveSource */

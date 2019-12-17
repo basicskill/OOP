@@ -1,10 +1,10 @@
 #include <fstream>
 #include <stack>
-#include <stdexcept>
 #include <string>
 #include <vector>
 #include "../include/Circuit.h"
 #include "../include/Element.h"
+#include "../include/CircuitExceptions.h"
 #include "../include/Gates.h"
 #include "../include/Sources.h"
 
@@ -101,7 +101,7 @@ Circuit::Circuit(const string& filepath) {
 
             // If element is not predefined, throw exception
             default: {
-                throw invalid_argument("Unrecognized type number!");
+                throw CircuitException("Element type doesn't exist!");
                 break;
             }
         }
@@ -178,7 +178,7 @@ Element* Circuit::findByID(int id) {
     for (auto it : elements_)
         if (it->getID() == id)
             return it;
-    throw invalid_argument("ID doesn't exist");
+    throw CircuitException("ID doesn't exist");
 }
 
 // Free every element in vector of elements
