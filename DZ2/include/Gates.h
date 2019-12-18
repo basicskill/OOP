@@ -17,7 +17,7 @@ class Probe : public Gate {
     public:
         Probe(int id);
         void updateOutput(double currTime) override;
-        ~Probe();
+        ~Probe() {};
 };
 
 // Derived class of Gate for NOT gate
@@ -25,7 +25,7 @@ class NOT : public Gate {
     public:
         NOT(int id);
         void updateOutput(double currTime) override;
-        ~NOT();
+        ~NOT() {};
 };
 
 // Derived class of Gate for AND gate
@@ -33,7 +33,7 @@ class AND : public Gate {
     public:
         AND(int id, int numberOfPorts);
         void updateOutput(double currTime) override;
-        ~AND();
+        ~AND() {};
 };
 
 // Derived class of Gate for OR gate
@@ -41,5 +41,5 @@ class OR : public Gate {
     public:
         OR(int id, int numberOfPorts);
         void updateOutput(double currTime) override;
-        ~OR();
+        ~OR() {};
 };

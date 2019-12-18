@@ -20,7 +20,7 @@ class Source : public Element {
 class WaveSource : public Source {
     public:
         WaveSource(int id, const int simTime, double frequency);
-        ~WaveSource();
+        ~WaveSource() {};
 };
 
 // Derived class of Source with output that changes defined by
@@ -28,7 +28,7 @@ class WaveSource : public Source {
 class ArbitrarySource : public Source {
     public:
         ArbitrarySource(int id, string& relativeChanges);
-        ~ArbitrarySource();
+        ~ArbitrarySource() {};
     private:
         double frequency_;
 };
