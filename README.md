@@ -11,3 +11,9 @@ Private repo for homework
 
 - [Homework text](http://oop.etf.rs/domaci/OOP_DZ2_2019_20.pdf)
 - [Public test data](http://oop.etf.rs/domaci/OOP_DZ2_2019_20_JavniTest.zip)
+
+# Semester project: Equation solver (data flow)
+
+- [Project text](http://oop.etf.rs/projekti/OOP_PROJ_2019_20.pdf)
+- [Public test data](http://oop.etf.rs/projekti/OOP_PROJ_2019_20_JavniTest_V3.zip)
+- [Simulation library used](http://oop.etf.rs/msvsproject.zip)

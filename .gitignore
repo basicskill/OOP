@@ -14,3 +14,10 @@ build/*
 build.sh
 tags
 test_primeri/
+javni_test/
+test_*/
+DZ3/
+source/
+SimulationEngine/
+tsslib/
+oop_projekat.sln
