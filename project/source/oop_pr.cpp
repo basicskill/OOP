@@ -1,16 +1,16 @@
 #include <iostream>
 #include "Compiler.h"
+#include "Machine.h"
 #include "Sched.h"
 
 using namespace std;
 
 int main() {
-    cout << "GOTOVO\n";
-      
     Compiler::getInstance().compile( \
-       "../Build/test_1/test.txt");
+       "../testing/test_1/test.txt");
 
-    cout << Scheduler::Instance()->getCurTime();
+    Machine* M = new Machine();
+    M->exec("../testing/test_1/test.imf");
 
     return 0;
 }
