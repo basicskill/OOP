@@ -8,7 +8,10 @@
 #include "Operation.h"
 #include "Memory.h"
 #include "Machine.h"
+#include "Logger.h"
+#include "Sched.h"
 
+using namespace std;
 
 bool digitString(const string s){
   return s.find_first_not_of( "0123456789" ) == string::npos;
@@ -32,22 +35,27 @@ bool Operation::check() {
     catch(VarNotAvalibleException& e) {
         return false;
     }
-    
     return true;
 
 }
 
 void Operation::notify(ID id) {
     done_ = true;
+    end_time_ = to_string(Scheduler::Instance()->getCurTime());
     string result = evaluate();
-    // Mesto za upisivanje
-    // cout << token_;
+    string logData = "";
+    logData = token_ + " (" + start_time_ + "-" + end_time_ + ")ns";
 
+    Logger::getInstance().log(logData.c_str());
+    //     token_ + " (" + start_time_ + "-" + "-1"
+    //     + ")ns"
+    // );
     Machine::getInstance().upadeState(output_name_, result);
 }
 
 string Equal::evaluate() {
     Memory::getInstance().set(output_name_, in_ports_[0]);
+    return in_ports_[0];
 }
 
 string Add::evaluate() {

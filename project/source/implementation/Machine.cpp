@@ -19,7 +19,6 @@ void Machine::init(string file) {
     string line, token;
     string op, dest, var1, var2;
     Operation* tmp;
-    char c;
 
     inFile >> token;
     while (inFile.peek() != EOF) {
@@ -32,7 +31,6 @@ void Machine::init(string file) {
         }
         else {
             inFile >> var2;
-            // TODO: operacije
             switch (op[0]) {
             case '+':
                 cout << "SABIRANJE"; 
@@ -49,11 +47,11 @@ void Machine::init(string file) {
 }
 
 void Machine::scheduale() {
-    //for (int i = 0; i < waiting_.size(); ++i)
     int i = 0;
     while (i < waiting_.size())
         if (waiting_[i]->check()) {
             Event::create(waiting_[i], 1); // TODO: VREME
+            waiting_[i]->setStart(Scheduler::Instance()->getCurTime());
             executing_.push_back(waiting_[i]);
             waiting_.erase(waiting_.begin() + i);
         } else ++i;
@@ -61,8 +59,10 @@ void Machine::scheduale() {
 
 void Machine::exec(string file) {
     init(file);
+    Logger::getInstance().init("fajl.log");
     scheduale();
     Scheduler::Instance()->processNow();    
+    Logger::getInstance().close();
 }
 
 void Machine::upadeState(string name, string value) {

@@ -19,8 +19,6 @@ void Memory::set(string varName, string val) {
 
     variables_.push_back(varName);
     values_.push_back(val);
-
-    cout << varName << " <- " << val << endl;
 }
 
 string Memory::get(string varName) {

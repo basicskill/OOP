@@ -4,6 +4,7 @@
 #include <vector>
 #include "Interfaces.h"
 #include "Types.h"
+#include "Logger.h"
 
 using namespace std;
 
@@ -21,9 +22,13 @@ class Operation : public ITimedElement {
     virtual string evaluate() = 0;
 
     inline bool done() const { return done_; };
+    inline void setStart(double time) { 
+        start_time_ = to_string(time);
+    }
 
  protected:
     string token_, output_name_;
+    string start_time_, end_time_;
     double time_;
     bool done_ = false;
     vector<string> in_ports_;
