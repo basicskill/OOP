@@ -9,53 +9,62 @@ using namespace std;
 
 class Operation : public ITimedElement {
  public:
-    Operation(string token, double time) : token_(token), time_(time) {};
-    // Ubi one ostale
+    Operation(string token, string outputName, double time) \
+        : token_(token), output_name_(outputName), time_(time) {};
+    Operation(const Operation& user) = delete;
+    Operation& operator=(const Operation&) = delete;
 
+    void setPort(int portNumber, string variable);
+    void updatePort(string varName, string newValue);
     bool check();
     void notify(ID id);
-    virtual void evaluate() = 0;
+    virtual string evaluate() = 0;
+
+    inline bool done() const { return done_; };
 
  protected:
-    string token_;
+    string token_, output_name_;
     double time_;
     bool done_ = false;
     vector<string> in_ports_;
 };
 
+class Equal : public Operation {
+ public:
+    Equal(string token, string outputName, double time) \
+        : Operation { token, outputName, time } {
+        in_ports_.resize(1);
+    };
+ private:
+    string evaluate() override;
+};
 
 class Add : public Operation {
  public:
-    Add(string token, double time) : Operation { token, time } {
+    Add(string token, string outputName, double time) \
+        : Operation { token, outputName, time } {
         in_ports_.resize(2);
     };
  private:
-    void evaluate() override;
+    string evaluate() override;
 };
 
 class Mul : public Operation {
  public:
-    Mul(string token, double time) : Operation { token, time } {
+    Mul(string token, string outputName, double time) \
+        : Operation { token, outputName, time } {
         in_ports_.resize(2);
     };
  private:
-    void evaluate() override;
+    string evaluate() override;
 };
 
 class Pow : public Operation {
  public:
-    Pow(string token, double time) : Operation { token, time } {
+    Pow(string token, string outputName, double time) \
+        : Operation { token, outputName, time } {
         in_ports_.resize(2);
     };
  private:
-    void evaluate() override;
-};
-
-class Equal : public Operation {
- public:
-    Equal(string token, double time) : Operation { token, time } {
-        in_ports_.resize(1);
-    };
- private:
-    void evaluate() override;
+    string evaluate() override;
 };

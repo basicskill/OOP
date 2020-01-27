@@ -9,8 +9,7 @@ int main() {
     Compiler::getInstance().compile( \
        "../testing/test_1/test.txt");
 
-    Machine* M = new Machine();
-    M->exec("../testing/test_1/test.imf");
+    Machine::getInstance().exec("../testing/test_1/test.imf");
 
     return 0;
 }

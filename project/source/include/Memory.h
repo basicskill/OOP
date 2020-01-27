@@ -1,5 +1,6 @@
 #pragma once
 
+#include <exception>
 #include <vector>
 #include <string>
 
@@ -11,8 +12,9 @@ class Memory {
     Memory(const Memory& user) = delete;
     Memory& operator=(const Memory&) = delete;
 
-    void set(string varName, double val);
-    double get(string varName);
+
+    void set(string varName, string val);
+    string get(string varName);
 
  private:
     // Treba da procita Nw
@@ -20,6 +22,16 @@ class Memory {
 
     int nw_ = 1; // !!
     vector<string> variables_;
-    vector<double> values_;
+    vector<string> values_;
 
+};
+
+class VarNotAvalibleException : public exception {
+    public:
+    VarNotAvalibleException(const char* msg) : exception(), msg_(msg) {};
+    const char * what () const throw () {
+        return msg_;
+    }
+    private:
+        const char* msg_;
 };

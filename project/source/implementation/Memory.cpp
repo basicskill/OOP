@@ -10,20 +10,22 @@ Memory& Memory::getInstance() {
     return instance;
 }
 
-void Memory::set(string varName, double val) {
+void Memory::set(string varName, string val) {
     for (int i = 0; i < variables_.size(); ++i)
-        if ( variables_[i] == varName) {
+        if (variables_[i] == varName) {
             values_[i] = val;
             return;
         }
 
     variables_.push_back(varName);
     values_.push_back(val);
+
+    cout << varName << " <- " << val << endl;
 }
 
-double Memory::get(string varName) {
+string Memory::get(string varName) {
     for (int i = 0; i < variables_.size(); ++i)
         if ( variables_[i] == varName)
             return values_[i];
-    cout << "MEMORY EXCEPTION";
+    throw VarNotAvalibleException("Variable not in memory");
 }
