@@ -70,7 +70,7 @@ void Machine::exec(string file) {
     Logger::getInstance().init("fajl.log"); // HARCODE!
 
     scheduale();
-    while (!waiting_.empty())
+    while ((!waiting_.empty()) || (!executing_.empty()))
         Scheduler::Instance()->processNow();    
 
     Logger::getInstance().close();

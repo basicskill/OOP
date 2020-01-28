@@ -18,7 +18,7 @@ class Operation : public ITimedElement {
 
     void setPort(int portNumber, string variable);
     void updatePort(string varName, string newValue);
-    bool check();
+    virtual bool check();
     void notify(ID id);
     virtual string evaluate() = 0;
 
@@ -41,8 +41,9 @@ class Equal : public Operation {
     Equal(string token, string outputName) \
         : Operation { token, outputName } {
         in_ports_.resize(1);
-        time_ = Config::getInstance().getValue("Mw");
+        time_ = Config::getInstance().getValue("Tw");
     };
+    bool check() override;
  private:
     string evaluate() override;
 };

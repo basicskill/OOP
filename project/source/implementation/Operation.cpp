@@ -36,9 +36,20 @@ bool Operation::check() {
         return false;
     }
     return true;
-
 }
 
+bool Equal::check() {
+    try {
+        if (digitString(in_ports_[0]) && Memory::getInstance().ready()) {
+            Memory::getInstance().reserve();
+            return true;
+        }
+        return false;
+    }
+    catch(VarNotAvalibleException& e) {
+        return false;
+    }
+}
 void Operation::notify(ID id) {
     done_ = true;
     end_time_ = to_string((int) Scheduler::Instance()->getCurTime());

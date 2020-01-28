@@ -12,6 +12,8 @@ Memory& Memory::getInstance() {
 }
 
 void Memory::set(string varName, string val) {
+    // if (!ready()) raise Exception!!
+    --in_process_;
     for (int i = 0; i < variables_.size(); ++i)
         if (variables_[i] == varName) {
             values_[i] = val;
@@ -21,6 +23,7 @@ void Memory::set(string varName, string val) {
     variables_.push_back(varName);
     values_.push_back(val);
 }
+
 
 string Memory::get(string varName) {
     for (int i = 0; i < variables_.size(); ++i)
