@@ -3,6 +3,7 @@
 #include <exception>
 #include <vector>
 #include <string>
+#include "Config.h"
 
 using namespace std;
 
@@ -12,15 +13,15 @@ class Memory {
     Memory(const Memory& user) = delete;
     Memory& operator=(const Memory&) = delete;
 
-
     void set(string varName, string val);
     string get(string varName);
 
- private:
-    // Treba da procita Nw
-    Memory() = default;
+    void save(string filename);
 
-    int nw_ = 1; // !!
+ private:
+    int nw_;
+    Memory() { nw_ = Config::getInstance().getValue("Nw"); };
+
     vector<string> variables_;
     vector<string> values_;
 

@@ -25,7 +25,6 @@ class Logger {
         logging_file_ << logText << endl;
     }
 
-
  private:
     Logger() = default;
     ofstream logging_file_;

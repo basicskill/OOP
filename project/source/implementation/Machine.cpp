@@ -3,6 +3,7 @@
 #include <sstream>
 #include <string>
 #include "Machine.h"
+#include "Memory.h"
 #include "Event.h"
 #include "Sched.h"
 
@@ -26,20 +27,20 @@ void Machine::init(string file) {
         inFile >> dest;
         inFile >> var1;
         if (op == "=") {
-            tmp = new Equal(token, dest, 1); // VREME
+            tmp = new Equal(token, dest); // VREME
             tmp->setPort(0, var1);
         }
         else {
             inFile >> var2;
             switch (op[0]) {
             case '+':
-                tmp = new Add(token, dest, 1);
+                tmp = new Add(token, dest);
                 break;
             case '*':
-                tmp = new Add(token, dest, 1);
+                tmp = new Mul(token, dest);
                 break;
             case '^':
-                tmp = new Add(token, dest, 1);
+                tmp = new Pow(token, dest);
                 break;
             default:
                 break;
@@ -56,27 +57,24 @@ void Machine::scheduale() {
     int i = 0;
     while (i < waiting_.size()) {
         if (waiting_[i]->check()) {
-            Event::create(waiting_[i], 1); // TODO: VREME
+            Event::create(waiting_[i], waiting_[i]->execTime());
             waiting_[i]->setStart(Scheduler::Instance()->getCurTime());
             executing_.push_back(waiting_[i]);
             waiting_.erase(waiting_.begin() + i);
         } else ++i;
     }
-    // cout << "###########\n";
 }
 
 void Machine::exec(string file) {
     init(file);
-    cout << "Broj elemenata: " << waiting_.size() << endl;
     Logger::getInstance().init("fajl.log"); // HARCODE!
 
     scheduale();
-    while (!waiting_.empty()) {
-        // scheduale();
+    while (!waiting_.empty())
         Scheduler::Instance()->processNow();    
-    }
 
     Logger::getInstance().close();
+    Memory::getInstance().save(file);
 }
 
 void Machine::upadeState(string name, string value) {

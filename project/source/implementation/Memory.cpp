@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <vector>
 #include "Memory.h"
@@ -26,4 +27,14 @@ string Memory::get(string varName) {
         if ( variables_[i] == varName)
             return values_[i];
     throw VarNotAvalibleException("Variable not in memory");
+}
+
+void Memory::save(string filename) {
+    string outpath;
+    outpath = filename.substr(0, filename.length()-4) + ".mem";
+    ofstream outFile(outpath);
+
+    for (int i = 0; i < variables_.size(); ++i)
+        outFile << variables_[i] << " = " 
+                << atof(values_[i].c_str()) << endl;
 }

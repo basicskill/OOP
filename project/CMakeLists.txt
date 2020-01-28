@@ -17,6 +17,7 @@ add_executable(oop_pr
     source/implementation/Machine.cpp
     source/implementation/Memory.cpp
     source/implementation/Operation.cpp
+    source/implementation/Config.cpp
 )
 
 target_link_libraries(oop_pr ${CMAKE_CURRENT_SOURCE_DIR}/lib/libSimulationEngine.so)
