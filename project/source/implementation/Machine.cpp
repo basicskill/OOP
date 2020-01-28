@@ -33,7 +33,7 @@ void Machine::init(string file) {
             inFile >> var2;
             switch (op[0]) {
             case '+':
-                cout << "SABIRANJE"; 
+                tmp = new Add(token, dest, 1);
                 break;
             default:
                 break;
@@ -48,20 +48,28 @@ void Machine::init(string file) {
 
 void Machine::scheduale() {
     int i = 0;
-    while (i < waiting_.size())
+    while (i < waiting_.size()) {
         if (waiting_[i]->check()) {
             Event::create(waiting_[i], 1); // TODO: VREME
             waiting_[i]->setStart(Scheduler::Instance()->getCurTime());
             executing_.push_back(waiting_[i]);
             waiting_.erase(waiting_.begin() + i);
         } else ++i;
+    }
+    // cout << "###########\n";
 }
 
 void Machine::exec(string file) {
     init(file);
-    Logger::getInstance().init("fajl.log");
+    cout << "Broj elemenata: " << waiting_.size() << endl;
+    Logger::getInstance().init("fajl.log"); // HARCODE!
+
     scheduale();
-    Scheduler::Instance()->processNow();    
+    while (!waiting_.empty()) {
+        // scheduale();
+        Scheduler::Instance()->processNow();    
+    }
+
     Logger::getInstance().close();
 }
 

@@ -14,7 +14,7 @@
 using namespace std;
 
 bool digitString(const string s){
-  return s.find_first_not_of( "0123456789" ) == string::npos;
+    return s.find_first_not_of( ".-0123456789" ) == string::npos;
 }
 
 void Operation::setPort(int portNumber, string variable) {
@@ -22,8 +22,12 @@ void Operation::setPort(int portNumber, string variable) {
 }
 
 void Operation::updatePort(string varName, string newValue) {
-    for (int i = 0; i < in_ports_.size(); ++i)
+    cout << output_name_ << " ";
+    for (int i = 0; i < in_ports_.size(); ++i) {
         if (in_ports_[i] == varName) in_ports_[i] = newValue;
+        cout << in_ports_[i] << " ";
+    }
+    cout << endl;
 }
 
 bool Operation::check() {
@@ -43,13 +47,11 @@ void Operation::notify(ID id) {
     done_ = true;
     end_time_ = to_string(Scheduler::Instance()->getCurTime());
     string result = evaluate();
+
     string logData = "";
     logData = token_ + " (" + start_time_ + "-" + end_time_ + ")ns";
-
     Logger::getInstance().log(logData.c_str());
-    //     token_ + " (" + start_time_ + "-" + "-1"
-    //     + ")ns"
-    // );
+
     Machine::getInstance().upadeState(output_name_, result);
 }
 
