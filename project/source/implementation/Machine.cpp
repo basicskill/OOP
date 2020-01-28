@@ -16,7 +16,6 @@ Machine& Machine::getInstance() {
 
 void Machine::init(string file) {
     ifstream inFile(file);
-    stringstream ss; 
     string line, token;
     string op, dest, var1, var2;
     Operation* tmp;
@@ -70,8 +69,10 @@ void Machine::exec(string file) {
     Logger::getInstance().init("fajl.log"); // HARCODE!
 
     scheduale();
-    while ((!waiting_.empty()) || (!executing_.empty()))
+    while ((!waiting_.empty()) || (!executing_.empty())) {
         Scheduler::Instance()->processNow();    
+        scheduale();
+    }
 
     Logger::getInstance().close();
     Memory::getInstance().save(file);

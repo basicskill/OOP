@@ -22,8 +22,9 @@ class Memory {
 
     void save(string filename);
 
- private:
+    // TRENUTNO!!!
     int nw_, in_process_ = 0;
+ private:
     Memory() { nw_ = Config::getInstance().getValue("Nw"); };
 
     vector<string> variables_;

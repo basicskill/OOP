@@ -8,11 +8,11 @@ using namespace std;
 
 // TODO: argumenti komandne linije
 int main() {
-    Config::getInstance().init("../testing/test_0/config.txt");
+    Config::getInstance().init("../testing/test_3/config.txt");
     Compiler::getInstance().compile( \
-       "../testing/test_0/test.txt");
+       "../testing/test_3/test.txt");
 
-    Machine::getInstance().exec("../testing/test_0/test.imf");
+    Machine::getInstance().exec("../testing/test_3/test.imf");
 
     return 0;
 }

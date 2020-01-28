@@ -13,12 +13,12 @@ class Compiler{
         Compiler& operator=(const Compiler&) = delete;
 
         static Compiler& getInstance();
-        void loadConfig(string filepath);
         void compile(string filepath);
 
     private:
         Compiler() { cout << "napravio kompajler\n"; }
         string inf2post(string infix);
         string readNext(string input, int* it);
+        bool checkOperation(string c);
         bool checkOperation(char c);
 };

@@ -10,9 +10,6 @@ Compiler& Compiler::getInstance() {
     return instance;
 }
 
-void Compiler::loadConfig(string filepath) {
-    cout << filepath + "loaded" << endl;
-}
 
 void Compiler::compile(string filepath) {
     string line, outpath;
@@ -33,7 +30,7 @@ void Compiler::compile(string filepath) {
 
         x = readNext(line, &it);
         while (x != "") {
-            if (!checkOperation(x[0]))
+            if (!checkOperation(x))
                 S.push(x);
             else {
                 op2 = S.top(); S.pop();
@@ -58,12 +55,6 @@ void Compiler::compile(string filepath) {
     outFile.close();
 }
 
-bool Compiler::checkOperation(char c) {
-    return ((c == '+') || (c == '-') || \
-            (c == '*') || (c == '/') || (c == '^') || \
-            (c == '(') || (c == ')') || (c == '='));
-}
-
 int ipr(char c);
 int spr(char c);
 string readNext(string input, int* it);
@@ -83,7 +74,7 @@ string Compiler::inf2post(string infix) {
     next = readNext(infix, &it); // '=' sign
     next = readNext(infix, &it); // equation
     while (next != "") {
-        if(!(checkOperation(next[0]))) {
+        if(!(checkOperation(next))) {
             postfix += " " + next;
             ++rank;
         }
@@ -106,6 +97,7 @@ string Compiler::inf2post(string infix) {
         S.pop();
     }
     postfix += " =";
+    cout << postfix << endl;
     return postfix;
 
 }
@@ -114,12 +106,35 @@ string Compiler::readNext(string input, int* it) {
     string el = "";
     while ((*it < input.length()) && input[*it] == ' ')
         (*it)++;
+
     if (*it > input.length()) return el;
+
+    if ((input[*it] == '-') && (isdigit(input[(*it)+1]))) {
+        el += "-";
+        ++(*it);
+    }
+
     if (checkOperation(input[*it])) el = input[(*it)++];
     else
-        while ((*it < input.size()) && !checkOperation(input[*it]) && input[*it] != ' ')
+        while ((*it < input.size()) && !checkOperation(input[*it]) && input[*it] != ' ') {
+            cout << input[*it] << " " << checkOperation(input[*it]) << endl;
             el += input[(*it)++];
+        }
+    
+    if (el == "e^d^c") cout << "OVDE" << endl;
     return el;
+}
+
+bool Compiler::checkOperation(string c) {
+    return ((c.size() == 1) && ((c[0] == '+') || (c[0] == '-') || \
+            (c[0] == '*') || (c[0] == '/') || (c[0] == '^') || \
+            (c[0] == '(') || (c[0] == ')') || (c[0] == '=')));
+}
+
+bool Compiler::checkOperation(char c) {
+    return ((c == '+') || (c == '-') || \
+            (c == '*') || (c == '/') || (c == '^') || \
+            (c == '(') || (c == ')') || (c == '='));
 }
 
 int ipr(char c) {
