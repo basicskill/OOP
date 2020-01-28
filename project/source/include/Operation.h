@@ -23,7 +23,7 @@ class Operation : public ITimedElement {
 
     inline bool done() const { return done_; };
     inline void setStart(double time) { 
-        start_time_ = to_string(time);
+        start_time_ = to_string((int) time);
     }
 
  protected:

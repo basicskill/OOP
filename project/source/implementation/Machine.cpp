@@ -35,6 +35,12 @@ void Machine::init(string file) {
             case '+':
                 tmp = new Add(token, dest, 1);
                 break;
+            case '*':
+                tmp = new Add(token, dest, 1);
+                break;
+            case '^':
+                tmp = new Add(token, dest, 1);
+                break;
             default:
                 break;
             }

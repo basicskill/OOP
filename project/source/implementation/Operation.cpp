@@ -45,7 +45,7 @@ bool Operation::check() {
 
 void Operation::notify(ID id) {
     done_ = true;
-    end_time_ = to_string(Scheduler::Instance()->getCurTime());
+    end_time_ = to_string((int)Scheduler::Instance()->getCurTime());
     string result = evaluate();
 
     string logData = "";
