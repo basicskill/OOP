@@ -12,9 +12,11 @@ void Config::init(string filename) {
     while (inFile.peek() != EOF) {
         inFile >> name;
         inFile >> equal;
-        inFile >> value;
-        names_.push_back(name);
-        values_.push_back(value);
+        if (name != "compilation") {
+            inFile >> value;
+            names_.push_back(name);
+            values_.push_back(value);
+        } else inFile >> compilation_;
     }
 }
 

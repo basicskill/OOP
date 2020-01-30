@@ -16,8 +16,10 @@ class Config {
 
     void init(string filename);
     double getValue(string name);
+    string getCompilation() { return compilation_; };
  private:
     Config() = default;
     vector<string> names_;
     vector<double> values_;
+    string compilation_;
 };

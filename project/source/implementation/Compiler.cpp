@@ -5,13 +5,7 @@
 
 using namespace std;
 
-Compiler& Compiler::getInstance() {
-    static Compiler instance;
-    return instance;
-}
-
-
-void Compiler::compile(string filepath) {
+void SimpleCompilationStrategy::compile(string filepath) {
     string line, outpath;
     outpath = filepath.substr(0, filepath.length()-4) + ".imf";
 
@@ -57,9 +51,8 @@ void Compiler::compile(string filepath) {
 
 int ipr(char c);
 int spr(char c);
-string readNext(string input, int* it);
 
-string Compiler::inf2post(string infix) {
+string CompilationStrategy::inf2post(string infix) {
     stack<string> S;
     string next, postfix = "";
     string x;
@@ -97,12 +90,10 @@ string Compiler::inf2post(string infix) {
         S.pop();
     }
     postfix += " =";
-    cout << postfix << endl;
     return postfix;
-
 }
 
-string Compiler::readNext(string input, int* it) {
+string CompilationStrategy::readNext(string input, int* it) {
     string el = "";
     while ((*it < input.length()) && input[*it] == ' ')
         (*it)++;
@@ -116,27 +107,25 @@ string Compiler::readNext(string input, int* it) {
 
     if (checkOperation(input[*it])) el = input[(*it)++];
     else
-        while ((*it < input.size()) && !checkOperation(input[*it]) && input[*it] != ' ') {
-            cout << input[*it] << " " << checkOperation(input[*it]) << endl;
+        while ((*it < input.size()) && !checkOperation(input[*it]) && input[*it] != ' ')
             el += input[(*it)++];
-        }
     
-    if (el == "e^d^c") cout << "OVDE" << endl;
     return el;
 }
 
-bool Compiler::checkOperation(string c) {
+bool CompilationStrategy::checkOperation(string c) {
     return ((c.size() == 1) && ((c[0] == '+') || (c[0] == '-') || \
             (c[0] == '*') || (c[0] == '/') || (c[0] == '^') || \
             (c[0] == '(') || (c[0] == ')') || (c[0] == '=')));
 }
 
-bool Compiler::checkOperation(char c) {
+bool CompilationStrategy::checkOperation(char c) {
     return ((c == '+') || (c == '-') || \
             (c == '*') || (c == '/') || (c == '^') || \
             (c == '(') || (c == ')') || (c == '='));
 }
 
+// Helper functions for 
 int ipr(char c) {
     switch (c) {
     case '+': case '-':
