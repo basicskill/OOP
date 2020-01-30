@@ -6,17 +6,25 @@
 
 using namespace std;
 
-// TODO: argumenti komandne linije
-int main() {
-    Config::getInstance().init("../testing/test_0/config.txt");
+int main(int argc, char** argv) {
+    
+    if (argc != 3) { 
+        cout << "Bad input args!\n";
+        return 1;
+    }
+    string configName = argv[1];
+    string inputName = argv[2];
+    string imfName;
+
+    Config::getInstance().init(configName);
 
     Compiler* compiler = new Compiler;
     compiler->setCompilationStrategy(
         Config::getInstance().getCompilation()
     );
-    compiler->compile("../testing/test_0/test.txt");
+    imfName = compiler->compile(inputName);
 
-    Machine::getInstance().exec("../testing/test_0/test.imf");
+    Machine::getInstance().exec(imfName);
 
     return 0;
 }

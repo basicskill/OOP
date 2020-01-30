@@ -31,7 +31,10 @@ class Compiler {
  public:
     Compiler() = default;
 
-    void compile(string filepath) const { compilation_strategy_->compile(filepath); };
+    string compile(string filepath) const { 
+        compilation_strategy_->compile(filepath); 
+        return filepath.substr(0, filepath.length()-4) + ".imf";
+    };
     void setCompilationStrategy(string strategyName) {
         delete compilation_strategy_;
         if (strategyName == "simple")
