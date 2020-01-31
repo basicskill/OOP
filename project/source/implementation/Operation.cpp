@@ -13,19 +13,23 @@
 
 using namespace std;
 
+// Check if string is real number
 bool digitString(const string s){
     return s.find_first_not_of( ".-0123456789" ) == string::npos;
 }
 
+// Set value of port
 void Operation::setPort(int portNumber, string variable) {
     in_ports_.at(portNumber) = variable;
 }
 
+// Update value of token
 void Operation::updatePort(string varName, string newValue) {
     for (int i = 0; i < in_ports_.size(); ++i)
         if (in_ports_[i] == varName) in_ports_[i] = newValue;
 }
 
+// Check if all ports have numbers in them
 bool Operation::check() {
     try {
         for (string val : in_ports_)
@@ -38,6 +42,8 @@ bool Operation::check() {
     return true;
 }
 
+// Check if all ports have numbers in them
+// Check if memory is ready for writing
 bool Equal::check() {
     try {
         if (digitString(in_ports_[0]) && Memory::getInstance().ready()) {
@@ -50,6 +56,8 @@ bool Equal::check() {
         return false;
     }
 }
+
+// Interface with Scheduler class
 void Operation::notify(ID id) {
     done_ = true;
     end_time_ = to_string((int) Scheduler::Instance()->getCurTime());

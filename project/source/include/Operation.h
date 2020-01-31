@@ -9,6 +9,7 @@
 
 using namespace std;
 
+// Abstracts class for simulation of data flow operation
 class Operation : public ITimedElement {
  public:
     Operation(string token, string outputName) \
@@ -16,13 +17,19 @@ class Operation : public ITimedElement {
     Operation(const Operation& user) = delete;
     Operation& operator=(const Operation&) = delete;
 
+    // Set value of port
     void setPort(int portNumber, string variable);
+    // Update value of token
     void updatePort(string varName, string newValue);
+    // Check if all ports have numbers in them
     virtual bool check();
+    // Interface with Scheduler class
     void notify(ID id);
+    // Calculate output of operation (virtual)
     virtual string evaluate() = 0;
 
     inline bool done() const { return done_; };
+    // Set start time of operation
     inline void setStart(double time) { 
         start_time_ = to_string((int) time);
     }
@@ -36,6 +43,7 @@ class Operation : public ITimedElement {
     vector<string> in_ports_;
 };
 
+// Equals operation Class
 class Equal : public Operation {
  public:
     Equal(string token, string outputName) \
@@ -48,6 +56,7 @@ class Equal : public Operation {
     string evaluate() override;
 };
 
+// Addition operation Class
 class Add : public Operation {
  public:
     Add(string token, string outputName) \
@@ -59,6 +68,7 @@ class Add : public Operation {
     string evaluate() override;
 };
 
+// Multiplication operation Class
 class Mul : public Operation {
  public:
     Mul(string token, string outputName) \
@@ -70,6 +80,7 @@ class Mul : public Operation {
     string evaluate() override;
 };
 
+// Power operation Class
 class Pow : public Operation {
  public:
     Pow(string token, string outputName) \
