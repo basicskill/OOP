@@ -1,30 +1,36 @@
 #pragma once
 
-#include <string>
 #include <iostream>
-
-using namespace std;
-
 #include <string>
 #include <vector>
 #include "Operation.h"
 
 using namespace std;
 
+// Singleton class for simulation of 
+// .imf file execution
 class Machine{
- public:
+ public:  
 
-   static Machine& getInstance();
-   Machine(const Machine& user) = delete;
-   Machine& operator=(const Machine&) = delete;
+  // Returns instance of Machine
+  static Machine& getInstance();
 
-   void init(string file);
-   void scheduale();
-   void exec(string file);
+  Machine(const Machine& user) = delete;
+  Machine& operator=(const Machine&) = delete;
 
-   void upadeState(string name, string value);
+  // Initialize machine with .imf file
+  void init(string file);
+  
+  // Put operations ready for execution on scheduler
+  void scheduale();
+
+  // Execute initialized program
+  void exec(string file);
+
+  // Update all operations with given name-value pair
+  void upadeState(string name, string value);
 
  private:
-   Machine() = default;
-   vector<Operation*> waiting_, executing_;
+  Machine() = default;
+  vector<Operation*> waiting_, executing_;
 };

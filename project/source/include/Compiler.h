@@ -6,11 +6,16 @@
 
 using namespace std;
 
+// Strategy class for compiling .txt to .imf file
+// Apstract class
 class CompilationStrategy {
  public:
     virtual void compile(string filepath) = 0;
  protected:
+    // Infix to postfix equation
     string inf2post(string infix);
+    
+    // Returns next variable, value or operation in a given string
     string readNext(string input, int* it);
     bool checkOperation(string c);
     bool checkOperation(char c);
@@ -26,15 +31,18 @@ class AdvancedCompilationStrategy : public CompilationStrategy{
     virtual void compile(string filepath) override {};
 };
 
-
+// Compiler class for executing different strategies 
 class Compiler {
  public:
     Compiler() = default;
 
+    // Compile file with previously set strategy
     string compile(string filepath) const { 
         compilation_strategy_->compile(filepath); 
         return filepath.substr(0, filepath.length()-4) + ".imf";
     };
+
+    // Set strategy type
     void setCompilationStrategy(string strategyName) {
         delete compilation_strategy_;
         if (strategyName == "simple")

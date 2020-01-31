@@ -9,24 +9,28 @@
 
 using namespace std;
 
+// Returns instance of Machine
 Machine& Machine::getInstance() {
     static Machine instance;
     return instance;
 }
 
+// Initialize machine with .imf file
 void Machine::init(string file) {
     ifstream inFile(file);
     string line, token;
     string op, dest, var1, var2;
     Operation* tmp;
 
-    inFile >> token;
+    // Create operation object for each line of .imf file
+    // Put all operations in waiting_ vecotor
     while (inFile.peek() != EOF) {
+        inFile >> token;
         inFile >> op;
         inFile >> dest;
         inFile >> var1;
         if (op == "=") {
-            tmp = new Equal(token, dest); // VREME
+            tmp = new Equal(token, dest);
             tmp->setPort(0, var1);
         }
         else {
@@ -48,10 +52,11 @@ void Machine::init(string file) {
             tmp->setPort(1, var2);
         }
         waiting_.push_back(tmp);
-        inFile >> token;
     }
 }
 
+// Put all ready files on scheduler
+// Move all ready files from waiting to executing 
 void Machine::scheduale() {
     int i = 0;
     while (i < waiting_.size()) {
@@ -64,25 +69,30 @@ void Machine::scheduale() {
     }
 }
 
+// Execute initialized program
 void Machine::exec(string file) {
-    init(file);
-    Logger::getInstance().init("fajl.log"); // HARCODE!
 
-    scheduale();
+    // Init machine
+    init(file);
+
+    // Process all ready operations until they are all done
     while ((!waiting_.empty()) || (!executing_.empty())) {
-        Scheduler::Instance()->processNow();    
         scheduale();
+        Scheduler::Instance()->processNow();    
     }
 
-    Logger::getInstance().close();
+    // Save Memory state
     Memory::getInstance().save(file);
 }
 
+// Update all operations with given name-value pair
 void Machine::upadeState(string name, string value) {
 
+    // Update all ports
     for (int i = 0; i < waiting_.size(); ++i)
         waiting_[i]->updatePort(name, value);
     
+    // Remove all done operations
     int i = 0;
     while (i < executing_.size())
         if (executing_[i]->done()) {
@@ -90,5 +100,6 @@ void Machine::upadeState(string name, string value) {
             executing_.erase(executing_.begin() + i);
         } else ++i;
 
+    // Schedual all now ready operations 
     scheduale();
 }

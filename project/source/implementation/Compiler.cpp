@@ -5,23 +5,36 @@
 
 using namespace std;
 
+// Helper functions for inf2post()
+int ipr(char c);
+int spr(char c);
+
+// Simple compilation strategy
+// Reads each line of given file, turns infix notation to postfix
+// Segments postfix notation to one operation in each line
 void SimpleCompilationStrategy::compile(string filepath) {
     string line, outpath;
-    outpath = filepath.substr(0, filepath.length()-4) + ".imf";
+    string tmpMem;
+    string x, op1, op2;
+    int tmpCounter = 1, operation = 1;
 
+    // Ouput file is filepath with .txt changed for .imf
+    outpath = filepath.substr(0, filepath.length()-4) + ".imf";
     ifstream inFile(filepath);
     ofstream outFile(outpath);
 
-    int tmpCounter = 1;
-    string tmpMem;
-    int operation = 1;
-    string x, op1, op2;
+    // Read each line
     while (inFile.peek() != EOF) {
         int it = 0;
         stack<string> S;
+
+        // Read line
         getline(inFile, line);
+
+        // Turn line to postfix notation
         line = inf2post(line);
 
+        // Read each element of postfix notation
         x = readNext(line, &it);
         while (x != "") {
             if (!checkOperation(x))
@@ -49,16 +62,17 @@ void SimpleCompilationStrategy::compile(string filepath) {
     outFile.close();
 }
 
-int ipr(char c);
-int spr(char c);
-
+// Rewrite infix notation to postfix notation
+// Postfix has operations and operands in string divided by 
+// spaces
 string CompilationStrategy::inf2post(string infix) {
     stack<string> S;
     string next, postfix = "";
     string x;
-
     int rank = 0;
     int it = 0;
+
+    // Remove trailing '\r' characters if they exist
     if (infix[infix.length()-1] == '\r')
         infix = infix.substr(0, infix.length()-1);
 
@@ -66,6 +80,8 @@ string CompilationStrategy::inf2post(string infix) {
     postfix += next;
     next = readNext(infix, &it); // '=' sign
     next = readNext(infix, &it); // equation
+
+    // Parse string
     while (next != "") {
         if(!(checkOperation(next))) {
             postfix += " " + next;
@@ -93,6 +109,7 @@ string CompilationStrategy::inf2post(string infix) {
     return postfix;
 }
 
+// Returns next variable, value or operation in a given string
 string CompilationStrategy::readNext(string input, int* it) {
     string el = "";
     while ((*it < input.length()) && input[*it] == ' ')
@@ -125,7 +142,7 @@ bool CompilationStrategy::checkOperation(char c) {
             (c == '(') || (c == ')') || (c == '='));
 }
 
-// Helper functions for 
+// Helper functions for inf2post()
 int ipr(char c) {
     switch (c) {
     case '+': case '-':
