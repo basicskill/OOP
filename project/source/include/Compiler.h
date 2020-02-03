@@ -3,6 +3,9 @@
 #include <string>
 #include <iostream>
 #include <exception>
+#include <vector>
+#include <map>
+#include <set>
 
 using namespace std;
 
@@ -28,7 +31,13 @@ class SimpleCompilationStrategy : public CompilationStrategy{
 
 class AdvancedCompilationStrategy : public CompilationStrategy{
  public:
-    virtual void compile(string filepath) override {};
+    virtual void compile(string filepath) override;
+ private:
+    map<string, double> scores_;
+    set<string> included_in_score_;
+    void sortCommands(vector<string>& commands);
+    double calcScore(string c, vector<string>& commands);
+    double getTime(string c);
 };
 
 // Compiler class for executing different strategies 

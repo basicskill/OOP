@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
         Config::getInstance().getCompilation()
     );
     
-    // Compile input
+    // // Compile input
     imfName = compiler->compile(inputName);
 
     // Execute compiled file

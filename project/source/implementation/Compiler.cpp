@@ -1,7 +1,12 @@
-#include "Compiler.h"
 #include <iostream>
+#include <sstream>
 #include <fstream>
+#include <vector>
 #include <stack>
+#include <map>
+
+#include "Compiler.h"
+#include "Config.h"
 
 using namespace std;
 
@@ -61,6 +66,153 @@ void SimpleCompilationStrategy::compile(string filepath) {
     inFile.close();
     outFile.close();
 }
+
+// Advanced compilation strategy
+void AdvancedCompilationStrategy::compile(string filepath) {
+    string line, outpath;
+    string tmpMem;
+    string x, op1, op2;
+    int tmpCounter = 1, operation = 1;
+
+    // Ouput file is filepath with .txt changed for .imf
+    outpath = filepath.substr(0, filepath.length()-4) + ".imf";
+    ifstream inFile(filepath);
+
+    // Vector of all commands to be sorted
+    vector<string> commands;
+
+    // Read each line
+    while (inFile.peek() != EOF) {
+        int it = 0;
+        stack<string> S;
+
+        // Read line
+        getline(inFile, line);
+
+        // Turn line to postfix notation
+        line = inf2post(line);
+
+        // Read each element of postfix notation
+        x = readNext(line, &it);
+        while (x != "") {
+            if (!checkOperation(x))
+                S.push(x);
+            else {
+                op2 = S.top(); S.pop();
+                op1 = S.top(); S.pop();
+
+                if (x == "=")
+                    commands.push_back("[" + to_string(operation++) 
+                        + "] = " + op1 + " " + op2);
+                else {
+                    tmpMem = "t" +  to_string(tmpCounter++);
+
+                    commands.push_back("[" + to_string(operation++)
+                            + "] " + x + " " + tmpMem + " "
+                            + op1 + " " + op2);
+                    S.push(tmpMem); 
+                }
+            }
+            x = readNext(line, &it);
+        }
+    }
+    inFile.close();
+
+
+    // Sort commands in order of importance
+    // Importance is calculated as sum of time needed for all
+    // operations dependant on starting operation to complete
+
+    sortCommands(commands);
+
+    ofstream outFile(outpath);
+    for (string com : commands)
+        outFile << com << endl;
+
+}
+
+string fetchNth(string s, int n) {
+    string ret;
+    stringstream ss(s);
+    for (int i = 0; i < n; ++i)
+        ss >> ret;
+    return ret;
+}
+
+void AdvancedCompilationStrategy::sortCommands(vector<string>& commands) {
+
+    map<string, double> scores;
+    string c;
+    for ( string com : commands ) {
+        c = fetchNth(com, 3);
+        scores.insert(pair<string, double> (c, 0));
+        if (fetchNth(com, 2) == "=") {
+            included_in_score_.clear();
+            scores.at(c) = calcScore(c, commands);
+        }
+    }
+
+    for (int i = 0; i < commands.size(); ++i)
+        for (int j = i; j < commands.size(); ++j)
+            if (scores.at(fetchNth(commands[i], 3)) < 
+                scores.at(fetchNth(commands[j], 3)))
+                    swap(commands[i], commands[j]);
+
+    for ( string com : commands )
+        cout << com << " -> " << scores.at(fetchNth(com, 3)) << endl;
+
+}
+
+double AdvancedCompilationStrategy::calcScore(string c, vector<string>& commands) {
+    double score = 0;
+    string x;
+    cout << c << endl;
+    if (included_in_score_.count(c) != 0) 
+        return 0;
+
+    if (scores_.count(c) != 0)
+        return scores_.at(c);
+
+    scores_.insert(pair<string, double> (c, 0));
+    included_in_score_.insert(c);
+
+    for (string com : commands) {
+        cout << "\t" << com << endl;
+        if (c == fetchNth(com, 3)) 
+            score += getTime(fetchNth(com, 2));
+
+        if (c == fetchNth(com, 4))
+            score += calcScore(fetchNth(com, 3), commands);
+        
+        if (c == fetchNth(com, 5))
+            score += calcScore(fetchNth(com, 3), commands);
+    }
+    scores_.at(c) = score;
+    return score;
+}
+
+
+double AdvancedCompilationStrategy::getTime(string c) {
+    switch (c[0]) {
+    case '=':
+        return Config::getInstance().getValue("Tw");
+    case '+':
+        return Config::getInstance().getValue("Ta");
+    case '*':
+        return Config::getInstance().getValue("Tm");
+    case '^':
+        return Config::getInstance().getValue("Te");
+    
+    default:
+        throw exception();
+    }
+}
+
+
+
+
+
+
 
 // Rewrite infix notation to postfix notation
 // Postfix has operations and operands in string divided by 
