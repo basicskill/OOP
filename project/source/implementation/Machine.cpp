@@ -24,17 +24,17 @@ void Machine::init(string file) {
 
     // Create operation object for each line of .imf file
     // Put all operations in waiting_ vecotor
-    while (inFile.peek() != EOF) {
-        inFile >> token;
-        inFile >> op;
-        inFile >> dest;
-        inFile >> var1;
+    while (getline(inFile, line)) {
+        stringstream ss(line);
+        
+        ss >> token >> op >> dest >> var1;
+
         if (op == "=") {
             tmp = new Equal(token, dest);
             tmp->setPort(0, var1);
         }
         else {
-            inFile >> var2;
+            ss >> var2;
             switch (op[0]) {
             case '+':
                 tmp = new Add(token, dest);

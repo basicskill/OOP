@@ -21,6 +21,7 @@ void SimpleCompilationStrategy::compile(string filepath) {
     string line, outpath;
     string tmpMem;
     string x, op1, op2;
+    stringstream ss;
     int tmpCounter = 1, operation = 1;
 
     // Ouput file is filepath with .txt changed for .imf
@@ -29,12 +30,9 @@ void SimpleCompilationStrategy::compile(string filepath) {
     ofstream outFile(outpath);
 
     // Read each line
-    while (inFile.peek() != EOF) {
+    while (getline(inFile, line)) {
         int it = 0;
         stack<string> S;
-
-        // Read line
-        getline(inFile, line);
 
         // Turn line to postfix notation
         line = inf2post(line);
@@ -122,15 +120,16 @@ void AdvancedCompilationStrategy::compile(string filepath) {
     // Sort commands in order of importance
     // Importance is calculated as sum of time needed for all
     // operations dependant on starting operation to complete
-
     sortCommands(commands);
 
+    // Write sorted commands to output location
     ofstream outFile(outpath);
     for (string com : commands)
         outFile << com << endl;
 
 }
 
+// Return Nth element in string (1-base)
 string fetchNth(string s, int n) {
     string ret;
     stringstream ss(s);
@@ -139,6 +138,7 @@ string fetchNth(string s, int n) {
     return ret;
 }
 
+// Score all commands with calcScore and then sort them descendingly
 void AdvancedCompilationStrategy::sortCommands(vector<string>& commands) {
 
     map<string, double> scores;
@@ -158,15 +158,15 @@ void AdvancedCompilationStrategy::sortCommands(vector<string>& commands) {
                 scores.at(fetchNth(commands[j], 3)))
                     swap(commands[i], commands[j]);
 
-    for ( string com : commands )
-        cout << com << " -> " << scores.at(fetchNth(com, 3)) << endl;
 
 }
 
+// Score every command based on the amount of time needed
+// to calculate everything that depands on particular value
 double AdvancedCompilationStrategy::calcScore(string c, vector<string>& commands) {
     double score = 0;
     string x;
-    cout << c << endl;
+
     if (included_in_score_.count(c) != 0) 
         return 0;
 
@@ -177,7 +177,6 @@ double AdvancedCompilationStrategy::calcScore(string c, vector<string>& commands
     included_in_score_.insert(c);
 
     for (string com : commands) {
-        cout << "\t" << com << endl;
         if (c == fetchNth(com, 3)) 
             score += getTime(fetchNth(com, 2));
 
@@ -207,12 +206,6 @@ double AdvancedCompilationStrategy::getTime(string c) {
         throw exception();
     }
 }
-
-
-
-
-
-
 
 // Rewrite infix notation to postfix notation
 // Postfix has operations and operands in string divided by 

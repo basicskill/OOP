@@ -35,8 +35,9 @@ class Operation : public ITimedElement {
     }
     inline double execTime() const { return time_; };
 
- protected:
+    // Privremeno
     string token_, output_name_;
+ protected:
     string start_time_, end_time_;
     bool done_ = false;
     double time_;
